@@ -2441,6 +2441,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:*":
+  version: 4.7.8
+  resolution: "@types/history@npm:4.7.8"
+  checksum: 54020371a412e949d0a329cc325253f16daf5b33e2e485135d39d3b30d3f9a8e323b00ce1162da82387c8ecf0397a8da49ad36ab309f06284326c064092879c7
+  languageName: node
+  linkType: hard
+
 "@types/hoist-non-react-statics@npm:*":
   version: 3.3.1
   resolution: "@types/hoist-non-react-statics@npm:3.3.1"
@@ -2585,6 +2592,27 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: 2c69fc56cbb6231d0725fbcec09386fccd797863b3b67ebe046be0f777f25c0d4a147f3601a3cf62ef45aea1f0af2df74d063c1ccdac18211ec43f5029b233d9
+  languageName: node
+  linkType: hard
+
+"@types/react-router-dom@npm:^5.1.7":
+  version: 5.1.7
+  resolution: "@types/react-router-dom@npm:5.1.7"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+    "@types/react-router": "*"
+  checksum: c5afe043f99cbe8e05e85db5b95b5fd724e7b00e0314b8bbc081e36c113e22fd102cd0c7a957c7ad55a55d2def91c17b07ffba45c2ac4a00cc56c5c927c93d4c
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:*":
+  version: 5.1.14
+  resolution: "@types/react-router@npm:5.1.14"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+  checksum: 106c8802cb8ca8c8eb925067faacf8de958126d625f5bf542b556b3b38eb598f1928f9c379ac5964888a8932aa7d19bf16891ecdb70af45669b486b34b716391
   languageName: node
   linkType: hard
 
@@ -3508,6 +3536,7 @@ __metadata:
     "@types/node": ^12.20.12
     "@types/react": ^17.0.5
     "@types/react-dom": ^17.0.4
+    "@types/react-router-dom": ^5.1.7
     "@types/styled-components": ^5.1.9
     "@typescript-eslint/eslint-plugin": ^4.5.0
     "@typescript-eslint/parser": ^4.5.0
@@ -3561,6 +3590,7 @@ __metadata:
     react-dom: ^17.0.2
     react-refresh: ^0.8.3
     react-router-dom: ^5.2.0
+    react-tsparticles: ^1.27.0
     resolve: 1.18.1
     resolve-url-loader: ^3.1.2
     sass-loader: ^10.0.5
@@ -7007,7 +7037,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-deep-equal@npm:^3.1.1":
+"fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
   checksum: 451526766b219503131d11e823eaadd1533080b0be4860e316670b039dcaf31cd1007c2fe036a9b922abba7c040dfad5e942ed79d21f2ff849e50049f36e0fb7
@@ -11673,6 +11703,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"pathseg@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "pathseg@npm:1.2.0"
+  checksum: 30eff04be62903c71c7f4771f690f0fb250c8cd2e6a643fb92c3974e6066f11c4594594e40e65a3d059b5ba72d5410224a88bb5338fd48c024d067b35c7998a6
+  languageName: node
+  linkType: hard
+
 "pbkdf2@npm:^3.0.3":
   version: 3.1.2
   resolution: "pbkdf2@npm:3.1.2"
@@ -13184,7 +13221,19 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react-tsparticles@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "react-tsparticles@npm:1.27.0"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    react: ">=16"
+    tslib: ^2.1.0
+    tsparticles: ^1.27.0
+  checksum: 16ff836d021369ec2f75ffb1b36a55a06dd5855fa02a48809a4b0404d5fd5ac75b174740d9eb679be0043f3cf74d0579c58118f40370bcc6e2cbb7c3f58eafbe
+  languageName: node
+  linkType: hard
+
+"react@npm:>=16, react@npm:^17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
@@ -15527,10 +15576,22 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3":
+"tslib@npm:^2.0.3, tslib@npm:^2.1.0":
   version: 2.2.0
   resolution: "tslib@npm:2.2.0"
   checksum: 2d35468c470410871c5246e43f12dcb6d0fc363b617c176f26443b9530e5c5ee8448966892a42956168d8f495da7865bda33dfe82c26c91991e28999974a618f
+  languageName: node
+  linkType: hard
+
+"tsparticles@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "tsparticles@npm:1.27.0"
+  dependencies:
+    pathseg: ^1.2.0
+  dependenciesMeta:
+    pathseg:
+      optional: true
+  checksum: 752423e6c55d568167faa2869c6ab2c5917763bc027ea58c7f23c2de3718eaf4ada2f84db2e87ad3c1ec36974269ff7203b1bbcba63f9a7353e30442ee3a3687
   languageName: node
   linkType: hard
 
