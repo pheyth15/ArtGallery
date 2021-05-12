@@ -3547,7 +3547,7 @@ __metadata:
     ts-pnp: 1.2.0
     typescript: 4.2.4
     url-loader: 4.1.1
-    webpack: 4.44.2
+    webpack: 4.46.0
     webpack-dev-server: 3.11.1
     webpack-manifest-plugin: 2.2.0
     workbox-webpack-plugin: 5.1.4
@@ -6153,7 +6153,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^4.3.0":
+"enhanced-resolve@npm:^4.5.0":
   version: 4.5.0
   resolution: "enhanced-resolve@npm:4.5.0"
   dependencies:
@@ -16152,9 +16152,9 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"webpack@npm:4.44.2":
-  version: 4.44.2
-  resolution: "webpack@npm:4.44.2"
+"webpack@npm:4.46.0":
+  version: 4.46.0
+  resolution: "webpack@npm:4.46.0"
   dependencies:
     "@webassemblyjs/ast": 1.9.0
     "@webassemblyjs/helper-module-context": 1.9.0
@@ -16164,7 +16164,7 @@ typescript@4.2.4:
     ajv: ^6.10.2
     ajv-keywords: ^3.4.1
     chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^4.3.0
+    enhanced-resolve: ^4.5.0
     eslint-scope: ^4.0.3
     json-parse-better-errors: ^1.0.2
     loader-runner: ^2.4.0
@@ -16186,7 +16186,7 @@ typescript@4.2.4:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: cb4a9051d64df00494d18afd379d26669b96309f3f41e89e55b8531d99d67060bf8b262a996dbcdc2cda99adfb6c1c2bd9966630d329b09f9f9aa9fc732a3259
+  checksum: 1e3bc97c01c19e96946be044cd9e323a476844b147c270185f7224bc8e0eda91946defbc120cb262f14e517e4c3071c6c90097e1a8b71a6a7afcacf37992763f
   languageName: node
   linkType: hard
 
