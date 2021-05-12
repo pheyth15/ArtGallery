@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "aaron-bond.better-comments",
+    "mgmcdermott.vscode-language-babel",
+    "coenraads.bracket-pair-colorizer-2"
+  ]
+}
