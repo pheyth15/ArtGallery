@@ -8,7 +8,8 @@ const GlobalTheme = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Russo One', sans-serif;
+    background-color: #fff3d5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
