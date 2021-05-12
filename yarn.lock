@@ -1898,7 +1898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/core@npm:^26.6.0, @jest/core@npm:^26.6.3":
+"@jest/core@npm:^26.6.3":
   version: 26.6.3
   resolution: "@jest/core@npm:26.6.3"
   dependencies:
@@ -1934,7 +1934,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/environment@npm:^26.6.0, @jest/environment@npm:^26.6.2":
+"@jest/environment@npm:^26.6.2":
   version: 26.6.2
   resolution: "@jest/environment@npm:26.6.2"
   dependencies:
@@ -2018,7 +2018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/test-result@npm:^26.6.0, @jest/test-result@npm:^26.6.2":
+"@jest/test-result@npm:^26.6.2":
   version: 26.6.2
   resolution: "@jest/test-result@npm:26.6.2"
   dependencies:
@@ -2066,7 +2066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^26.6.0, @jest/types@npm:^26.6.2":
+"@jest/types@npm:^26.6.2":
   version: 26.6.2
   resolution: "@jest/types@npm:26.6.2"
   dependencies:
@@ -3608,9 +3608,9 @@ __metadata:
     html-webpack-plugin: 4.5.2
     husky: 6.0.0
     identity-obj-proxy: 3.0.0
-    jest: 26.6.0
-    jest-circus: 26.6.0
-    jest-resolve: 26.6.0
+    jest: 26.6.3
+    jest-circus: 26.6.3
+    jest-resolve: 26.6.2
     jest-watch-typeahead: 0.6.3
     lint-staged: 11.0.0
     mini-css-extract-plugin: 1.6.0
@@ -6933,7 +6933,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^26.6.0, expect@npm:^26.6.2":
+"expect@npm:^26.6.2":
   version: 26.6.2
   resolution: "expect@npm:26.6.2"
   dependencies:
@@ -9112,36 +9112,36 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-circus@npm:26.6.0":
-  version: 26.6.0
-  resolution: "jest-circus@npm:26.6.0"
+"jest-circus@npm:26.6.3":
+  version: 26.6.3
+  resolution: "jest-circus@npm:26.6.3"
   dependencies:
     "@babel/traverse": ^7.1.0
-    "@jest/environment": ^26.6.0
-    "@jest/test-result": ^26.6.0
-    "@jest/types": ^26.6.0
+    "@jest/environment": ^26.6.2
+    "@jest/test-result": ^26.6.2
+    "@jest/types": ^26.6.2
     "@types/babel__traverse": ^7.0.4
     "@types/node": "*"
     chalk: ^4.0.0
     co: ^4.6.0
     dedent: ^0.7.0
-    expect: ^26.6.0
+    expect: ^26.6.2
     is-generator-fn: ^2.0.0
-    jest-each: ^26.6.0
-    jest-matcher-utils: ^26.6.0
-    jest-message-util: ^26.6.0
-    jest-runner: ^26.6.0
-    jest-runtime: ^26.6.0
-    jest-snapshot: ^26.6.0
-    jest-util: ^26.6.0
-    pretty-format: ^26.6.0
+    jest-each: ^26.6.2
+    jest-matcher-utils: ^26.6.2
+    jest-message-util: ^26.6.2
+    jest-runner: ^26.6.3
+    jest-runtime: ^26.6.3
+    jest-snapshot: ^26.6.2
+    jest-util: ^26.6.2
+    pretty-format: ^26.6.2
     stack-utils: ^2.0.2
     throat: ^5.0.0
-  checksum: b08d8dde4a1fcd17f23b9634e1dca57fa2e497afebd30e3937e7b2d8a21679c99b55cbb9010713ab62ced0d41d4df489a10dd3469e3ca8752425f777a580a9d8
+  checksum: 8ef70b1ccd0837d19131889fcf4e7ed4d6f051a9140be71eb3536dd98d80ab4ab31dd5d445300f08f6e8d0bd6588e77159d53ea4fda808c5e55eb464755d1837
   languageName: node
   linkType: hard
 
-"jest-cli@npm:^26.6.0":
+"jest-cli@npm:^26.6.3":
   version: 26.6.3
   resolution: "jest-cli@npm:26.6.3"
   dependencies:
@@ -9216,7 +9216,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-each@npm:^26.6.0, jest-each@npm:^26.6.2":
+"jest-each@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-each@npm:26.6.2"
   dependencies:
@@ -9326,7 +9326,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:^26.6.0, jest-matcher-utils@npm:^26.6.2":
+"jest-matcher-utils@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-matcher-utils@npm:26.6.2"
   dependencies:
@@ -9338,7 +9338,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-message-util@npm:^26.6.0, jest-message-util@npm:^26.6.2":
+"jest-message-util@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-message-util@npm:26.6.2"
   dependencies:
@@ -9395,22 +9395,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-resolve@npm:26.6.0":
-  version: 26.6.0
-  resolution: "jest-resolve@npm:26.6.0"
-  dependencies:
-    "@jest/types": ^26.6.0
-    chalk: ^4.0.0
-    graceful-fs: ^4.2.4
-    jest-pnp-resolver: ^1.2.2
-    jest-util: ^26.6.0
-    read-pkg-up: ^7.0.1
-    resolve: ^1.17.0
-    slash: ^3.0.0
-  checksum: 51d06a4cafd97381df947fa9e06dfef8caea05c0aed24657dda37801365812ec9a5f27db04a16176f9d613d9087e8763cc3c2d55f23fed320f950de98d42106a
-  languageName: node
-  linkType: hard
-
 "jest-resolve@npm:26.6.2, jest-resolve@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-resolve@npm:26.6.2"
@@ -9427,7 +9411,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-runner@npm:^26.6.0, jest-runner@npm:^26.6.3":
+"jest-runner@npm:^26.6.3":
   version: 26.6.3
   resolution: "jest-runner@npm:26.6.3"
   dependencies:
@@ -9455,7 +9439,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-runtime@npm:^26.6.0, jest-runtime@npm:^26.6.3":
+"jest-runtime@npm:^26.6.3":
   version: 26.6.3
   resolution: "jest-runtime@npm:26.6.3"
   dependencies:
@@ -9502,7 +9486,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-snapshot@npm:^26.6.0, jest-snapshot@npm:^26.6.2":
+"jest-snapshot@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-snapshot@npm:26.6.2"
   dependencies:
@@ -9526,7 +9510,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-util@npm:^26.6.0, jest-util@npm:^26.6.2":
+"jest-util@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-util@npm:26.6.2"
   dependencies:
@@ -9607,16 +9591,16 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest@npm:26.6.0":
-  version: 26.6.0
-  resolution: "jest@npm:26.6.0"
+"jest@npm:26.6.3":
+  version: 26.6.3
+  resolution: "jest@npm:26.6.3"
   dependencies:
-    "@jest/core": ^26.6.0
+    "@jest/core": ^26.6.3
     import-local: ^3.0.2
-    jest-cli: ^26.6.0
+    jest-cli: ^26.6.3
   bin:
     jest: bin/jest.js
-  checksum: 5db020fa88bc87ff4c8373be02605a3a42256b59151b30b22955dfa92142516150abf0e969fe8847bdf2bf0fbb338a1c93954b808fc8d7b0933f4bb15f1e0500
+  checksum: 4ffcfefa2b30999a71c205e1aacf2b3d7af10f36c17ba1baf45677684116ad5aa6a5bb162ad2dd418f9ea99d18f24b70d8c83fb317b765a3acac361a50e9db9f
   languageName: node
   linkType: hard
 
@@ -12778,7 +12762,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^26.0.0, pretty-format@npm:^26.6.0, pretty-format@npm:^26.6.2":
+"pretty-format@npm:^26.0.0, pretty-format@npm:^26.6.2":
   version: 26.6.2
   resolution: "pretty-format@npm:26.6.2"
   dependencies:
