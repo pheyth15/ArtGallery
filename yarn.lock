@@ -1672,10 +1672,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/normalize.css@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "@csstools/normalize.css@npm:10.1.0"
-  checksum: 75d6c92d2ed1c643dd3f33c07feda78983790717c1b03c8b6a35215feac571d1d79e65a3668774eb420bd352651a2c33afd53cd580a25e93b6c6fd8bb0756071
+"@csstools/normalize.css@npm:*":
+  version: 11.0.1
+  resolution: "@csstools/normalize.css@npm:11.0.1"
+  checksum: 0595b5ede221e231d4965b80dd238ff9d86a84a70d299f9be629217cfa7a3cfe453f3ea64f9a00ecc20fa793c7c69f9a29b88051a1dced214347917587e1a317
   languageName: node
   linkType: hard
 
@@ -3572,7 +3572,7 @@ __metadata:
     pnp-webpack-plugin: 1.6.4
     postcss-flexbugs-fixes: 4.2.1
     postcss-loader: 3.0.0
-    postcss-normalize: 8.0.1
+    postcss-normalize: 10.0.0
     postcss-preset-env: 6.7.0
     postcss-safe-parser: 5.0.2
     prettier: 2.3.0
@@ -4330,7 +4330,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.12.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.6, browserslist@npm:^4.6.2, browserslist@npm:^4.6.4":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.12.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.6, browserslist@npm:^4.6.4":
   version: 4.16.6
   resolution: "browserslist@npm:4.16.6"
   dependencies:
@@ -11820,14 +11820,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss-browser-comments@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "postcss-browser-comments@npm:3.0.0"
-  dependencies:
-    postcss: ^7
+"postcss-browser-comments@npm:^4":
+  version: 4.0.0
+  resolution: "postcss-browser-comments@npm:4.0.0"
   peerDependencies:
-    browserslist: ^4
-  checksum: 5b15cad45c572ebd1a2abad087f8bd577749dc1edbab6c6f83cc7d8c3e95a8c113798258f4bde4713c304802cdf263a67d3e96a668f37854624650c1a3ec7f3a
+    browserslist: ">=4"
+    postcss: ">=8"
+  checksum: 767c048a35deeb5af337926a0888728d865bdf5def1ab180fa364c6e28bca8fd88e72805be8e34c9c90ca59f35fcbeb809a2c90f195fe9a0cbed4bf876becac1
   languageName: node
   linkType: hard
 
@@ -12378,16 +12377,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss-normalize@npm:8.0.1":
-  version: 8.0.1
-  resolution: "postcss-normalize@npm:8.0.1"
+"postcss-normalize@npm:10.0.0":
+  version: 10.0.0
+  resolution: "postcss-normalize@npm:10.0.0"
   dependencies:
-    "@csstools/normalize.css": ^10.1.0
-    browserslist: ^4.6.2
-    postcss: ^7.0.17
-    postcss-browser-comments: ^3.0.0
-    sanitize.css: ^10.0.0
-  checksum: befdfa1b1e48765a3849b761076cdec50ef83030402bc8f84e1bb4750e574677cd8ff316bf2bf78816aad8c41c405ba0ef938908788671daef98a1bddeeaea6e
+    "@csstools/normalize.css": "*"
+    postcss-browser-comments: ^4
+    sanitize.css: "*"
+  peerDependencies:
+    browserslist: ">= 4"
+    postcss: ">= 8"
+  checksum: 138073d4c815bd6e8d33b2327cc03e909f882880baf8ccac14664f5a92dc6fbe12a226f08aa118127639e8de3b9c41cd30a88cbd54d7c23123d65cf2ed25a13d
   languageName: node
   linkType: hard
 
@@ -12681,7 +12681,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7, postcss@npm:^7.0.0, postcss@npm:^7.0.1, postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.27, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
+"postcss@npm:^7.0.0, postcss@npm:^7.0.1, postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.27, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
   version: 7.0.35
   resolution: "postcss@npm:7.0.35"
   dependencies:
@@ -13915,10 +13915,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sanitize.css@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "sanitize.css@npm:10.0.0"
-  checksum: 26a08c35f331db1fb87c61b0c50b6607c4259dc44f428d7e3e36aa19f44bcfa423e19ed3e2c6598eeb571759bd8d486b2c4b7720c21e4ecab7d4a045b85b3963
+"sanitize.css@npm:*":
+  version: 12.0.1
+  resolution: "sanitize.css@npm:12.0.1"
+  checksum: cb6cf8a406b6190f418e9d734d30872668dfa22809038d3c0ff14a05b1543a8d90e6ae743f69bfdd454a2b1de11c9508ca5877aefd1816155a7ef50524ff4648
   languageName: node
   linkType: hard
 
