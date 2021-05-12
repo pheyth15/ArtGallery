@@ -1,7 +1,9 @@
 import { DefaultTheme } from "styled-components";
 
 const fonts = {
-  font: "-apple-system, BlinkMacSystemFont, 'Russo One', sans-serif",
+  header: "-apple-system, BlinkMacSystemFont, 'Russo One', sans-serif",
+  body: "-apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif",
+  shadow: "0 2px 5px #000",
 };
 
 const colors = {
