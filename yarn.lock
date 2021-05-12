@@ -3576,7 +3576,7 @@ __metadata:
     postcss-preset-env: 6.7.0
     postcss-safe-parser: 5.0.2
     prettier: 2.3.0
-    prompts: 2.4.0
+    prompts: 2.4.1
     react: 17.0.2
     react-app-polyfill: 2.0.0
     react-dev-utils: 11.0.4
@@ -12828,7 +12828,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prompts@npm:^2.0.1":
+"prompts@npm:2.4.1, prompts@npm:^2.0.1":
   version: 2.4.1
   resolution: "prompts@npm:2.4.1"
   dependencies:
