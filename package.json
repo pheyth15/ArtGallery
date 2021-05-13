@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "bfj": "7.0.2",
-    "dotenv": "8.2.0",
+    "dotenv": "8.6.0",
     "dotenv-expand": "5.1.0",
     "react-router-dom": "5.2.0"
   },
