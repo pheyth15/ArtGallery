@@ -3620,7 +3620,7 @@ __metadata:
     react-app-polyfill: 2.0.0
     react-dev-utils: 11.0.4
     react-dom: 17.0.2
-    react-refresh: 0.8.3
+    react-refresh: 0.10.0
     react-router-dom: 5.2.0
     resolve: 1.20.0
     resolve-url-loader: 4.0.0
@@ -12984,10 +12984,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:0.8.3":
-  version: 0.8.3
-  resolution: "react-refresh@npm:0.8.3"
-  checksum: 38f06df8e0a20701b96e5d680838a3528d66cfb53db79843d30cb9517df3262ec596607147439975267bf0634bee77101db37298ea79b5742cc28664632f3c76
+"react-refresh@npm:0.10.0":
+  version: 0.10.0
+  resolution: "react-refresh@npm:0.10.0"
+  checksum: 09a59d2732d8f2e9df3f59670146a507ea027f6b35a18b5a2116919f18ef056cfcc0455bed2f6b916ac154e4af78e3c57748cfbf9383930729624f7b8c672b91
   languageName: node
   linkType: hard
 
