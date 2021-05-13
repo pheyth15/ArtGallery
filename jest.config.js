@@ -44,4 +44,4 @@ const config = {
   resetMocks: true,
 };
 
-export default config;
+module.exports = config;
