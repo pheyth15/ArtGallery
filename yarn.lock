@@ -3580,7 +3580,7 @@ __metadata:
     babel-preset-react-app: 10.0.0
     bfj: 7.0.2
     camelcase: 6.2.0
-    case-sensitive-paths-webpack-plugin: 2.3.0
+    case-sensitive-paths-webpack-plugin: 2.4.0
     css-loader: 5.2.4
     dotenv: 8.6.0
     dotenv-expand: 5.1.0
@@ -4622,10 +4622,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"case-sensitive-paths-webpack-plugin@npm:2.3.0":
-  version: 2.3.0
-  resolution: "case-sensitive-paths-webpack-plugin@npm:2.3.0"
-  checksum: 45d85caef4dfc3cacb1461912dee18cfcae74f35cdbeaf564484ed3c82266a5d9305883b86d9537bd57d07ba2a64fb716c2ff98a88a4bf97619ab7b130cbb68e
+"case-sensitive-paths-webpack-plugin@npm:2.4.0":
+  version: 2.4.0
+  resolution: "case-sensitive-paths-webpack-plugin@npm:2.4.0"
+  checksum: 6eff838bb26107a7cddf25ab588ce165cb685cc2aa71f03dfa065d3fece31ce96dca90f079beb90e4d72d34295355afab0366512ec1b6381051bd3f5bf7aa83a
   languageName: node
   linkType: hard
 
