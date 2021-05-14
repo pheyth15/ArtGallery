@@ -6,6 +6,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "stats": "source-map-explorer ./build/static/js/* --html coverage/sourcemap.html",
     "format": "prettier --write src/**/*.{ts,tsx,js,jsx}",
     "lint": "tsc --noEmit && eslint src/**/*.{ts,tsx,js,jsx} && stylelint './src/**/*.{ts,tsx,js,jsx}'",
     "prepare": "husky install"
@@ -81,6 +82,7 @@
     "resolve-url-loader": "4.0.0",
     "sass-loader": "11.1.1",
     "semver": "7.3.5",
+    "source-map-explorer": "2.5.2",
     "style-loader": "2.0.0",
     "styled-components": "5.3.0",
     "stylelint": "13.13.1",
