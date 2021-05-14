@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import About from "./pages/about";
@@ -90,6 +91,7 @@ const routes: Routes[] = [
 const App = () => (
   <BrowserRouter>
     <Layout>
+      {/* Navigation Bar */}
       <NavBar>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/gallery">Gallery</NavLink>
@@ -98,18 +100,20 @@ const App = () => (
 
       {/* Page renders */}
       <Switch>
-        <Route exact path="/">
-          <Content>
-            <Home />
-          </Content>
-        </Route>
-
-        {/* Additional Routes */}
-        {routes.map((route: Routes) => (
-          <Route path={route.path} key={route.path}>
-            <Content>{route.component}</Content>
+        <ErrorBoundary>
+          <Route exact path="/">
+            <Content>
+              <Home />
+            </Content>
           </Route>
-        ))}
+
+          {/* Additional Routes */}
+          {routes.map((route: Routes) => (
+            <Route path={route.path} key={route.path}>
+              <Content>{route.component}</Content>
+            </Route>
+          ))}
+        </ErrorBoundary>
       </Switch>
     </Layout>
   </BrowserRouter>
