@@ -10,9 +10,13 @@ const Layout = styled.div`
   align-self: center;
   height: 100vh;
   padding: 0 13vw;
-  position: relative;
   z-index: 2;
   overflow: hidden;
+  background-color: rgba(255, 243, 213, 0.75);
+
+  * {
+    opacity: 1 !important;
+  }
 `;
 
 const Content = styled.main`
@@ -20,7 +24,7 @@ const Content = styled.main`
   align-self: center;
   width: max-content;
   height: max-content;
-  padding: 0 13vw;
+  padding: 0 2rem;
   position: relative;
   z-index: 2;
   overflow: auto !important;
@@ -29,7 +33,6 @@ const Content = styled.main`
 const NavBar = styled.nav`
   display: block;
   font-size: 1.1rem;
-  text-align: right;
   width: max-content;
   height: max-content;
   padding: 0.75rem;
@@ -39,18 +42,19 @@ const NavBar = styled.nav`
 
 const NavLink = styled(Link)`
   color: ${(props) => props.theme.colors.dark};
-  font-family: ${(props) => props.theme.fonts.header};
   text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   display: block;
   height: max-content;
-  width: max-content;
-  margin: 1rem 0 1rem auto;
-  padding: 0.25rem;
+  margin: 5rem 0;
+  padding: 0.75rem;
+  transform: rotate(-91deg);
   transition: all 0.15s;
 
   &:hover:before {
+    left: 0 !important;
     right: 0 !important;
   }
 
@@ -58,18 +62,18 @@ const NavLink = styled(Link)`
     content: "";
     position: absolute;
     z-index: 0;
-    left: 0;
+    left: 100%;
     right: 100%;
     bottom: 0;
     background: ${(props) => props.theme.colors.dark};
     height: 2px;
-    transition-property: right;
+    transition-property: left, right;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(-91deg);
   }
 `;
 
