@@ -33,10 +33,7 @@ jobs:
       - name: Install deps
         run: yarn --check-cache --inline-builds
 
-      - name: Test web
+      - name: Build web
         run: |
           yarn lint
-          yarn test
-
-      - name: Build web
-        run: yarn  build
+          yarn  build
