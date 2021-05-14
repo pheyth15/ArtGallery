@@ -1,13 +1,9 @@
 {
-  "*.(md,json,yml,yaml,toml)": [
-    "prettier --write"
-  ],
+  "*.(md,json,yml,yaml,toml)": ["prettier --write"],
   "*.(js,jsx,ts,tsx)": [
     "eslint --cache --fix",
     "prettier --write",
     "stylelint --fix"
   ],
-  "*.(ts,tsx)": [
-    "tsc --noEmit"
-  ]
+  "*.(ts,tsx)": ["tsc --noEmit"]
 }
