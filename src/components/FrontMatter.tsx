@@ -4,10 +4,11 @@ import styled from "styled-components";
 const Introduction = styled.section`
   color: ${(props) => props.theme.colors.dark};
   font-weight: 500;
-  line-height: 2;
   font-size: 1.5rem;
-  overflow: hidden;
+  line-height: 2;
+  height: max-content;
   word-wrap: break-word;
+  margin: 2.7rem 0;
 `;
 
 const Title = styled.h1`

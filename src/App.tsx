@@ -9,6 +9,8 @@ import About from "./pages/about";
 const Layout = styled.div`
   display: flex;
   align-self: center;
+  align-content: center;
+  align-items: center;
   height: 100vh;
   padding: 0 13vw;
   z-index: 2;
@@ -21,14 +23,10 @@ const Layout = styled.div`
 `;
 
 const Content = styled.main`
-  display: block;
-  align-self: center;
   width: max-content;
   height: max-content;
   padding: 0 2rem;
-  position: relative;
   z-index: 2;
-  overflow: auto !important;
 `;
 
 const NavBar = styled.nav`
