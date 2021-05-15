@@ -7,6 +7,8 @@ import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import About from "./pages/about";
 
+import BgVideo from "./assets/bg.mp4";
+
 const Layout = styled.div`
   display: flex;
   align-self: center;
@@ -83,14 +85,16 @@ const routes: Routes[] = [
   { path: "/about", component: <About /> },
 ];
 
-const App = () => (
-  <BrowserRouter>
-    <Layout>
-      <NavBar>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/gallery">Gallery</NavLink>
-        <NavLink to="about">About</NavLink>
-      </NavBar>
+const App = () => {
+  return (
+    <BrowserRouter>
+      {/* Video Background */}
+      <video autoPlay muted loop id="bgVideo">
+        <source src={BgVideo} type="video/mp4" />
+      </video>
+
+      <Layout>
+        <Nav />
 
       {/* Page renders */}
       <Switch>
