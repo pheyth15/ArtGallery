@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Footer from "./components/Footer";
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import About from "./pages/about";
@@ -85,7 +86,6 @@ const routes: Routes[] = [
 const App = () => (
   <BrowserRouter>
     <Layout>
-      {/* Navigation Bar */}
       <NavBar>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/gallery">Gallery</NavLink>
@@ -109,6 +109,8 @@ const App = () => (
           ))}
         </ErrorBoundary>
       </Switch>
+
+      <Footer />
     </Layout>
   </BrowserRouter>
 );
