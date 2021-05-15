@@ -1,27 +1,29 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const FooterLinks = styled.footer`
+const NavBar = styled.nav`
   display: block;
-  font-size: 1.08vw;
+  font-size: 1.35vw;
   width: max-content;
   height: max-content;
-  position: absolute;
-  right: 0;
-  bottom: 0.25vw;
+  padding: 0 0.5vw;
+  align-self: center;
+  border-right: 0.15vw solid ${(props) => props.theme.colors.dark};
 `;
 
-const ExtLink = styled.a`
+const NavLink = styled(Link)`
   color: ${(props) => props.theme.colors.dark};
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  text-shadow: 0 0 0.05vw #333;
   display: block;
   height: max-content;
-  width: min-content;
-  margin: 5vw auto 3.5vw auto;
-  padding: 0.5vw 0;
+  width: max-content;
+  margin: 5vw auto;
+  padding: 0.75vw;
   transform: rotate(-91deg);
   transition: all 0.15s;
-  text-shadow: 0 0 0.05vw #333;
 
   &:hover:before {
     left: 0 !important;
@@ -47,11 +49,12 @@ const ExtLink = styled.a`
   }
 `;
 
-const Footer = () => (
-  <FooterLinks>
-    <ExtLink href="https://ncca.gov.ph/">ncca.gov</ExtLink>
-    <ExtLink href="https://github.com/jhdcruz/ArtGallery">Repository</ExtLink>
-  </FooterLinks>
+const Nav = () => (
+  <NavBar>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/gallery">Gallery</NavLink>
+    <NavLink to="about">About</NavLink>
+  </NavBar>
 );
 
-export default Footer;
+export default Nav;

@@ -8,12 +8,12 @@ const App = lazy(() => import("./App"));
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<Loader />}>
-      <ThemeProvider theme={theme}>
-        <GlobalTheme />
+    <ThemeProvider theme={theme}>
+      <GlobalTheme />
+      <Suspense fallback={<Loader />}>
         <App />
-      </ThemeProvider>
-    </Suspense>
+      </Suspense>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
