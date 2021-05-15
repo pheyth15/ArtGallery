@@ -1,5 +1,6 @@
 import FrontMatter from "../components/FrontMatter";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 
 const Home = () => (
   <>
@@ -8,6 +9,7 @@ const Home = () => (
       title="Cavite City in the COVID-19 Pandemic."
     />
     <Button text="See gallery —>" link="/gallery" />
+    <Footer />
   </>
 );
 

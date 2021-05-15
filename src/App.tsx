@@ -16,39 +16,35 @@ const Layout = styled.div`
   z-index: 2;
   overflow: hidden;
   background-color: rgba(255, 243, 213, 0.75);
-
-  * {
-    opacity: 1 !important;
-  }
 `;
 
 const Content = styled.main`
   width: max-content;
   height: max-content;
-  padding: 0 2rem;
+  padding: 0 2vw;
   z-index: 2;
 `;
 
 const NavBar = styled.nav`
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.25vw;
   width: max-content;
   height: max-content;
-  padding: 0.75rem;
+  padding: 0 0.5vw;
   align-self: center;
-  border-right: 2px solid ${(props) => props.theme.colors.dark};
+  border-right: 0.15vw solid ${(props) => props.theme.colors.dark};
 `;
 
 const NavLink = styled(Link)`
   color: ${(props) => props.theme.colors.dark};
   text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.1vw;
   display: block;
   height: max-content;
-  margin: 5rem 0;
-  padding: 0.75rem;
+  width: max-content;
+  margin: 5vw auto;
+  padding: 0.75vw;
   transform: rotate(-91deg);
   transition: all 0.15s;
 
@@ -65,7 +61,7 @@ const NavLink = styled(Link)`
     right: 100%;
     bottom: 0;
     background: ${(props) => props.theme.colors.dark};
-    height: 2px;
+    height: 0.15vw;
     transition-property: left, right;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
