@@ -5,12 +5,8 @@ import { GlobalTheme, theme } from "./theme";
 import Loader from "./components/Loader";
 import ErrorBoundary from "./components/ErrorBoundary";
 
-// Preload App
-const App = React.lazy(() => {
-  return new Promise((resolve) => setTimeout(resolve, 5 * 1000)).then(
-    () => import("./App")
-  );
-});
+// Lazy-load App
+const App = React.lazy(() => import("./App"));
 
 ReactDOM.render(
   <React.StrictMode>
