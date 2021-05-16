@@ -20,7 +20,7 @@ const ExtLink = styled.a`
   margin: 5.5vw auto 4vw auto;
   padding: 0.5vw 0;
   transform: rotate(-91deg);
-  transition: all 0.15s;
+  transition: all 0.3s;
 
   &:hover:before {
     left: 0 !important;
@@ -37,8 +37,8 @@ const ExtLink = styled.a`
     background: ${(props) => props.theme.colors.dark};
     height: 0.15vw;
     transition-property: left, right;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
   }
 
   &:hover {

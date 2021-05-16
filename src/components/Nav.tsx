@@ -22,7 +22,7 @@ const NavLink = styled(Link)`
   margin: 5vw auto;
   padding: 0.75vw;
   transform: rotate(-91deg);
-  transition: all 0.15s;
+  transition: all 0.3s;
 
   &:hover:before {
     left: 0 !important;
@@ -39,8 +39,8 @@ const NavLink = styled(Link)`
     background: ${(props) => props.theme.colors.dark};
     height: 0.15vw;
     transition-property: left, right;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
   }
 
   &:hover {
