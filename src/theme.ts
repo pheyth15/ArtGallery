@@ -4,8 +4,7 @@ const GlobalTheme = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ##efbb55;
-    background-size: cover;
+    background: #efbb55;
     font-family: -apple-system, BlinkMacSystemFont, 'Play', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -19,6 +18,7 @@ const GlobalTheme = createGlobalStyle`
     }
 
     /*  Route Animations */
+
     .routeAnim {
       animation: routeAnim 0.5s ease-out;
       animation-fill-mode: both;
