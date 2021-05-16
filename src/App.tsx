@@ -11,7 +11,7 @@ import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import About from "./pages/about";
 
-import BgVideo from "./assets/bg.mp4";
+import bgVideo from "./assets/bg.mp4";
 
 const Layout = styled.div`
   display: flex;
@@ -50,9 +50,7 @@ const App = () => {
   return (
     <BrowserRouter>
       {/* Video Background */}
-      <video autoPlay muted loop id="bgVideo">
-        <source src={BgVideo} type="video/mp4" />
-      </video>
+      <video id="bgVideo" preload="auto" src={bgVideo} autoPlay muted loop />
 
       <Layout>
         <Nav />
