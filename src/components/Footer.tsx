@@ -63,7 +63,9 @@ const extLinks: ExtLinkProps[] = [
 const Footer = () => (
   <FooterLinks>
     {extLinks.map((extLinks: ExtLinkProps) => (
-      <ExtLink href={extLinks.link}>{extLinks.content}</ExtLink>
+      <ExtLink href={extLinks.link} target="__blank">
+        {extLinks.content}
+      </ExtLink>
     ))}
   </FooterLinks>
 );
