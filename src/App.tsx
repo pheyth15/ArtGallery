@@ -42,6 +42,7 @@ interface Routes {
 }
 
 const routes: Routes[] = [
+  { path: "/", component: <Home /> },
   { path: "/gallery", component: <Gallery /> },
   { path: "/about", component: <About /> },
 ];
@@ -55,24 +56,17 @@ const App = () => {
       <Layout>
         <Nav />
 
-        {/* Animations */}
+        {/* Route Animations */}
         <TransitionGroup component={null}>
           <CSSTransition
             classNames="routeAnim fade"
             timeout={{ enter: 500, exit: 500 }}
           >
-            {/* Page renders */}
+            {/* Page Renders | Routing */}
             <Switch>
               <ErrorBoundary>
-                <Route exact path="/">
-                  <Content className="routeAnim fade">
-                    <Home />
-                  </Content>
-                </Route>
-
-                {/* Additional Routes */}
                 {routes.map((route: Routes) => (
-                  <Route path={route.path} key={route.path}>
+                  <Route exact path={route.path} key={route.path}>
                     <Content className="routeAnim fade">
                       {route.component}
                     </Content>
