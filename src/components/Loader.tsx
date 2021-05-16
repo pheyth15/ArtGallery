@@ -10,7 +10,7 @@ const PageLoader = styled.img`
   width: 200px;
   height: auto;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;

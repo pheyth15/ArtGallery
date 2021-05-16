@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = styled.nav`
   display: block;
-  font-size: 1.35vw;
+  font-size: 1.3vw;
   width: max-content;
   height: max-content;
   padding: 0 0.5vw;
@@ -16,7 +16,6 @@ const NavLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1vw;
-  text-shadow: 0 0 0.05vw #333;
   display: block;
   height: max-content;
   width: max-content;

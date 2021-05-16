@@ -11,8 +11,6 @@ import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import About from "./pages/about";
 
-import bgVideo from "./assets/bg.mp4";
-
 const Layout = styled.div`
   display: flex;
   align-self: center;
@@ -22,7 +20,7 @@ const Layout = styled.div`
   padding: 0 13vw;
   z-index: 2;
   overflow: hidden;
-  background-color: rgba(142, 108, 61, 0.3);
+  background-color: rgba(255, 243, 213, 0.7);
 `;
 
 const Content = styled.main`
@@ -30,10 +28,6 @@ const Content = styled.main`
   height: max-content;
   padding: 0 2vw;
   z-index: 2;
-
-  > * {
-    text-shadow: 0 0 0.05vw #333;
-  }
 `;
 
 interface Routes {
@@ -50,9 +44,6 @@ const routes: Routes[] = [
 const App = () => {
   return (
     <BrowserRouter>
-      {/* Video Background */}
-      <video id="bgVideo" preload="auto" src={bgVideo} autoPlay muted loop />
-
       <Layout>
         <Nav />
 

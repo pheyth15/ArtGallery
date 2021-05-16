@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterLinks = styled.footer`
   display: block;
-  font-size: 1.08vw;
+  font-size: 1.05vw;
   width: max-content;
   height: max-content;
   position: absolute;
@@ -16,12 +16,11 @@ const ExtLink = styled.a`
   text-transform: uppercase;
   display: block;
   height: max-content;
-  width: min-content;
-  margin: 5vw auto 3.5vw auto;
+  width: max-content;
+  margin: 5.5vw auto 4vw auto;
   padding: 0.5vw 0;
   transform: rotate(-91deg);
   transition: all 0.15s;
-  text-shadow: 0 0 0.05vw #333;
 
   &:hover:before {
     left: 0 !important;
@@ -54,6 +53,10 @@ interface ExtLinkProps {
 
 const extLinks: ExtLinkProps[] = [
   { link: "https://ncca.gov.ph/", content: "ncca.gov" },
+  {
+    link: "https://wakatime.com/badge/github/jhdcruz/ArtGallery",
+    content: "WakaTime",
+  },
   { link: "https://github.com/jhdcruz/ArtGallery", content: "Repository" },
 ];
 

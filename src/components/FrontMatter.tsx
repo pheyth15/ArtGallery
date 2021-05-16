@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Introduction = styled.section`
   color: ${(props) => props.theme.colors.dark};
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   line-height: 2;
   height: max-content;
   word-wrap: break-word;
@@ -11,11 +11,9 @@ const Introduction = styled.section`
 `;
 
 const Title = styled.h1`
-  font-weight: 700;
-  font-family: "Russo One", sans-serif;
+  font-weight: 900;
   font-size: 3.7vw;
   line-height: 1 !important;
-  letter-spacing: 0.15vw;
   margin: 0;
   vertical-align: middle;
   text-transform: uppercase;
@@ -28,9 +26,7 @@ type Heading = {
 
 const FrontMatter = ({ intro, title }: Heading) => (
   <Introduction>
-    <p style={{ margin: 0, fontWeight: 700, fontFamily: '"Play", sans-serif' }}>
-      {intro}
-    </p>
+    <p style={{ margin: 0 }}>{intro}</p>
     <Title>{title}</Title>
   </Introduction>
 );
