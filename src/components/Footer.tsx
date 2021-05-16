@@ -47,10 +47,21 @@ const ExtLink = styled.a`
   }
 `;
 
+interface ExtLinkProps {
+  link: string;
+  content: string;
+}
+
+const extLinks: ExtLinkProps[] = [
+  { link: "https://ncca.gov.ph/", content: "ncca.gov" },
+  { link: "https://github.com/jhdcruz/ArtGallery", content: "Repository" },
+];
+
 const Footer = () => (
   <FooterLinks>
-    <ExtLink href="https://ncca.gov.ph/">ncca.gov</ExtLink>
-    <ExtLink href="https://github.com/jhdcruz/ArtGallery">Repository</ExtLink>
+    {extLinks.map((extLinks: ExtLinkProps) => (
+      <ExtLink href={extLinks.link}>{extLinks.content}</ExtLink>
+    ))}
   </FooterLinks>
 );
 
