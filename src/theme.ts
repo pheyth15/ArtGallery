@@ -4,7 +4,7 @@ const GlobalTheme = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #efbb55;
+    background: #ffd180;
     font-family: -apple-system, BlinkMacSystemFont, 'Play', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
