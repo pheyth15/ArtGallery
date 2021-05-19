@@ -24,7 +24,7 @@ const Layout = styled.div`
 `;
 
 const Content = styled.main`
-  width: max-content;
+  width: 100%;
   height: max-content;
   padding: 0 2vw;
   z-index: 2;
