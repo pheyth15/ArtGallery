@@ -47,26 +47,26 @@ const App = () => {
       <Layout>
         <Nav />
 
-        {/* Route Animations */}
-        <TransitionGroup component={null}>
-          <CSSTransition
-            classNames="routeAnim fade"
-            timeout={{ enter: 500, exit: 500 }}
-          >
-            {/* Page Renders | Routing */}
-            <Switch>
-              <ErrorBoundary>
-                {routes.map((route: Routes) => (
-                  <Route exact path={route.path} key={route.path}>
-                    <Content className="routeAnim fade">
-                      {route.component}
-                    </Content>
-                  </Route>
-                ))}
-              </ErrorBoundary>
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
+        <ErrorBoundary>
+          {/* Route Animations */}
+          <TransitionGroup component={null}>
+            <CSSTransition
+              classNames="routeAnim fade"
+              timeout={{ enter: 500, exit: 500 }}
+            >
+              {/* Page Renders | Routing */}
+              <Switch>
+                <ErrorBoundary>
+                  {routes.map(({ path, component }: Routes) => (
+                    <Route exact path={path} key={path}>
+                      <Content className="routeAnim fade">{component}</Content>
+                    </Route>
+                  ))}
+                </ErrorBoundary>
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        </ErrorBoundary>
 
         <Footer />
       </Layout>

@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
 import { GlobalTheme, theme } from "./theme";
 import Loader from "./components/Loader";
-import ErrorBoundary from "./components/ErrorBoundary";
 
 // Lazy-load App
 const App = React.lazy(() => import("./App"));
@@ -13,9 +12,7 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <GlobalTheme />
       <Suspense fallback={<Loader />}>
-        <ErrorBoundary>
-          <App />
-        </ErrorBoundary>
+        <App />
       </Suspense>
     </ThemeProvider>
   </React.StrictMode>,
