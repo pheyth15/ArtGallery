@@ -55,6 +55,27 @@ const GlobalTheme = createGlobalStyle`
       transform: translateX(-30px);
       transition: opacity 0.5s ease-out;
     }
+
+    /* Custom Scrollbar */
+
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: transparent #555;
+    }
+
+    *::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 12px;
+      border: 3px solid transparent;
+    }
   }
 `;
 
