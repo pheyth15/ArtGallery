@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { lazy, ReactNode, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styled from "styled-components";
@@ -6,10 +6,11 @@ import styled from "styled-components";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
 
-import Home from "./pages/home";
-import Gallery from "./pages/gallery";
-import About from "./pages/about";
+const Home = lazy(() => import("./pages/home"));
+const Gallery = lazy(() => import("./pages/gallery"));
+const About = lazy(() => import("./pages/about"));
 
 const Layout = styled.div`
   display: flex;
@@ -57,11 +58,15 @@ const App = () => {
               {/* Page Renders | Routing */}
               <Switch>
                 <ErrorBoundary>
-                  {routes.map(({ path, component }: Routes) => (
-                    <Route exact path={path} key={path}>
-                      <Content className="routeAnim fade">{component}</Content>
-                    </Route>
-                  ))}
+                  <Suspense fallback={Loader}>
+                    {routes.map(({ path, component }: Routes) => (
+                      <Route exact path={path} key={path}>
+                        <Content className="routeAnim fade">
+                          {component}
+                        </Content>
+                      </Route>
+                    ))}
+                  </Suspense>
                 </ErrorBoundary>
               </Switch>
             </CSSTransition>
