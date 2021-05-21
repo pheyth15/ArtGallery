@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "bfj": "7.0.2",
-    "dotenv": "9.0.2",
+    "dotenv": "10.0.0",
     "dotenv-expand": "5.1.0",
     "react-router-dom": "5.2.0",
     "react-transition-group": "4.4.1"
