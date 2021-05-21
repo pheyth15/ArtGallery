@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import Art, { Content } from "../components/Art";
+import Art from "../components/Art";
+import { ArtObject } from "../interfaces";
 import art1 from "../assets/img/placeholder.jpg";
-
-// TODO: Arts could be dynamically imported.
-//       https://loadable-components.com/docs/dynamic-import/
 
 const Showcase = styled.section`
   display: block;
@@ -11,7 +9,7 @@ const Showcase = styled.section`
   height: 55vw;
 `;
 
-const arts = [
+const arts: ArtObject[] = [
   {
     img: `${art1}`,
     title: "Sample Art Title",
@@ -41,7 +39,7 @@ const arts = [
 
 const Gallery = () => (
   <Showcase>
-    {arts.map(({ img, title, desc }: Content) => (
+    {arts.map(({ img, title, desc }: ArtObject) => (
       <Art img={img} title={title} desc={desc} />
     ))}
   </Showcase>

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import styled from "styled-components";
+import { ArticleProps } from "../types";
 
 const Panel = styled.article`
   margin: 7vw 0;
@@ -42,13 +42,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-export type Content = {
-  img?: string;
-  title?: string;
-  desc?: string | ReactNode;
-};
-
-const Art = ({ img, title, desc }: Content) => (
+const Art = ({ img, title, desc }: ArticleProps) => (
   <Panel>
     <Image src={img} alt={title} draggable="false" />
     <About>

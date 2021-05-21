@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ExtLinkObject } from "../interfaces";
 
 const FooterLinks = styled.footer`
   display: block;
@@ -46,12 +47,7 @@ const ExtLink = styled.a`
   }
 `;
 
-interface ExtLinkProps {
-  link: string;
-  content: string;
-}
-
-const extLinks: ExtLinkProps[] = [
+const extLinks: ExtLinkObject[] = [
   { link: "https://ncca.gov.ph/", content: "ncca.gov" },
   {
     link: "https://wakatime.com/badge/github/jhdcruz/ArtGallery",
@@ -62,7 +58,7 @@ const extLinks: ExtLinkProps[] = [
 
 const Footer = () => (
   <FooterLinks>
-    {extLinks.map((extLinks: ExtLinkProps) => (
+    {extLinks.map((extLinks: ExtLinkObject) => (
       <ExtLink href={extLinks.link} target="__blank">
         {extLinks.content}
       </ExtLink>
