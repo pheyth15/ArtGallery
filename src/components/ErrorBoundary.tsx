@@ -1,5 +1,5 @@
 import { Component } from "react";
-import FrontMatter from "./FrontMatter";
+import Hero from "./Hero";
 
 class ErrorBoundary extends Component {
   constructor(props: string | object) {
@@ -16,7 +16,7 @@ class ErrorBoundary extends Component {
     // @ts-ignore
     if (this.state.hasError) {
       return (
-        <FrontMatter
+        <Hero
           intro="Unfortunately, the site is"
           title="Undergoing maintenance."
         />

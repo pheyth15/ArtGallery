@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import styled from "styled-components";
+import { HeroProps } from "../types";
 
 const Introduction = styled.section`
   color: ${(props) => props.theme.colors.dark};
@@ -19,16 +19,12 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-type Heading = {
-  intro?: string | ReactNode;
-  title?: string | ReactNode;
-};
-
-const FrontMatter = ({ intro, title }: Heading) => (
+const Hero = ({ intro, title, desc }: HeroProps) => (
   <Introduction>
     <p style={{ margin: 0 }}>{intro}</p>
     <Title>{title}</Title>
+    <article style={{ margin: "1vw 0" }}>{desc}</article>
   </Introduction>
 );
 
-export default FrontMatter;
+export default Hero;
