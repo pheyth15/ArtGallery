@@ -11,3 +11,9 @@ export type ArticleProps = {
   title?: string;
   desc?: string | ReactNode;
 };
+
+export type ArticleProps = {
+  cover?: string;
+  title?: string;
+  content?: string | ReactNode;
+};
