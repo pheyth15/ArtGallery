@@ -37,6 +37,7 @@ const arts: ArtObject[] = [
   },
 ];
 
+/* TODO: Image fullscreen modal */
 const Gallery = () => (
   <Showcase>
     {arts.map(({ img, title, desc }: ArtObject) => (
