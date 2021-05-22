@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ArticleProps } from "../types";
+import { ArtProps } from "../types";
 
 const Panel = styled.article`
   margin: 7vw 0;
@@ -42,7 +42,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Art = ({ img, title, desc }: ArticleProps) => (
+const Art = ({ img, title, desc }: ArtProps) => (
   <Panel>
     <Image src={img} alt={title} draggable="false" />
     <About>

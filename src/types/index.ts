@@ -6,7 +6,7 @@ export type HeroProps = {
   desc?: string | ReactNode;
 };
 
-export type ArticleProps = {
+export type ArtProps = {
   img?: string;
   title?: string;
   desc?: string | ReactNode;
