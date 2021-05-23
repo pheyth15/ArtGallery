@@ -19,11 +19,10 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Hero = ({ intro, title, desc }: HeroProps) => (
+const Hero = ({ intro, title }: HeroProps) => (
   <Introduction>
     <p style={{ margin: 0 }}>{intro}</p>
     <Title>{title}</Title>
-    <article style={{ margin: "1vw 0" }}>{desc}</article>
   </Introduction>
 );
 
