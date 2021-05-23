@@ -50,8 +50,8 @@ const ExtLink = styled.a`
 const extLinks: ExtLinkObject[] = [
   { link: "https://ncca.gov.ph/", content: "ncca.gov" },
   {
-    link: "https://wakatime.com/badge/github/jhdcruz/ArtGallery",
-    content: "WakaTime",
+    link: "https://github.com/jhdcruz/ArtGallery/commits/main",
+    content: "Revisions",
   },
   { link: "https://github.com/jhdcruz/ArtGallery", content: "Repository" },
 ];
