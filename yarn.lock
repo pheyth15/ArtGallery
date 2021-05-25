@@ -3519,6 +3519,7 @@ __metadata:
     "@types/styled-components": 5.1.9
     "@typescript-eslint/eslint-plugin": 4.25.0
     "@typescript-eslint/parser": 4.25.0
+    eslint: 7.27.0
     eslint-config-prettier: 8.3.0
     eslint-config-react-app: 6.0.0
     eslint-plugin-flowtype: 5.7.2
@@ -6511,7 +6512,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.11.0":
+"eslint@npm:7.27.0, eslint@npm:^7.11.0":
   version: 7.27.0
   resolution: "eslint@npm:7.27.0"
   dependencies:
