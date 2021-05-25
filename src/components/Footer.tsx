@@ -58,9 +58,9 @@ const extLinks: ExtLinkObject[] = [
 
 const Footer = () => (
   <FooterLinks>
-    {extLinks.map((extLinks: ExtLinkObject) => (
-      <ExtLink href={extLinks.link} target="__blank">
-        {extLinks.content}
+    {extLinks.map((extLink: ExtLinkObject) => (
+      <ExtLink href={extLink.link} target="__blank">
+        {extLink.content}
       </ExtLink>
     ))}
   </FooterLinks>
