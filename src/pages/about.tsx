@@ -1,11 +1,32 @@
 import styled from "styled-components";
 import Article from "../components/Article";
 import Cover from "../assets/img/cover.jpg";
+import During from "../assets/img/during.jpg";
 
 const History = styled.div`
   margin: 0 auto;
   height: 100vh;
   overflow: auto;
+`;
+
+const ImageConstraint = styled.div`
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  border-radius: 0.5vw;
+  box-shadow: 0 0.15vw 0.7vw #777;
+`;
+
+const Image = styled.img`
+  margin: 0;
+  width: 100%;
+  vertical-align: middle;
+`;
+
+const Header = styled.h2`
+  margin: 4vw 0 2vw 0;
+  font-size: 2.2vw;
 `;
 
 const About = () => (
@@ -16,14 +37,15 @@ const About = () => (
       content={
         <section>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vero
-            suscipit autem, obcaecati ut tempore. Voluptate, id enim nam,
-            blanditiis natus modi. Nihil sit maiores perspiciatis nulla facilis
-            explicabo ab?
+            Cavite, officially the Province of Cavite, is a province in the
+            Philippines located in the CALABARZON region in Luzon. Located on
+            the southern shores of Manila Bay and southwest of Metro Manila, it
+            is one of the most industrialized and fastest-growing provinces in
+            the Philippines.
           </p>
 
           {/* TODO: Photo before pandemic */}
-          <h2>Before the COVID-19 Pandemic</h2>
+          <Header>Before the COVID-19 Pandemic</Header>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vero
@@ -32,8 +54,11 @@ const About = () => (
             explicabo ab?
           </p>
 
-          {/* TODO: Photo during pandemic */}
-          <h2>During the COVID-19 Pandemic</h2>
+          <Header>During the COVID-19 Pandemic</Header>
+
+          <ImageConstraint>
+            <Image src={During} alt="During the pandemic" />
+          </ImageConstraint>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vero
