@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { ReactImageGalleryItem } from "react-image-gallery";
 
 export type HeroProps = {
   intro?: string | ReactNode;
@@ -18,5 +19,5 @@ export type ArticleProps = {
 };
 
 export type CarouselProps = {
-  screens: any;
+  screens: ReactImageGalleryItem[];
 };
