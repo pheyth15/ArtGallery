@@ -27,6 +27,7 @@ const Carousel = ({ screens }: CarouselProps) => (
       slideInterval={10000}
       thumbnailPosition="left"
       disableThumbnailScroll={true}
+      showPlayButton={false}
     />
   </>
 );
