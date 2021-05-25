@@ -16,3 +16,7 @@ export type ArticleProps = {
   title?: string;
   content?: string | ReactNode;
 };
+
+export type CarouselProps = {
+  screens: any;
+};

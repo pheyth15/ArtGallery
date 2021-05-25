@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ArtProps } from "../types";
 
 const Panel = styled.article`
-  margin: 7vw 0;
+  margin: 4vw 0 18vw 0;
   color: ${(props) => props.theme.colors.dark};
   font-size: 1.5vw;
   height: max-content;
