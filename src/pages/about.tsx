@@ -36,7 +36,6 @@ const Header = styled.h2`
 const About = () => (
   <History>
     <Article
-      cover={Cover}
       title="Cavite, Philippines"
       content={
         <section>
@@ -48,8 +47,11 @@ const About = () => (
             the Philippines.
           </p>
 
-          {/* TODO: Photo before pandemic */}
           <Header>Before the COVID-19 Pandemic</Header>
+
+          <ImageConstraint>
+            <Image src={Cover} alt="Before the pandemic" />
+          </ImageConstraint>
 
           <p>
             Cavite has an approximate population of 3,678,301, It has 43 private
