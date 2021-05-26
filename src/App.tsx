@@ -1,7 +1,8 @@
-import { lazy, ReactNode, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styled from "styled-components";
+import { IRoute } from "./interfaces";
 
 import ErrorBoundary from "./components/ErrorBoundary";
 import Nav from "./components/Nav";
@@ -31,12 +32,7 @@ const Content = styled.main`
   z-index: 2;
 `;
 
-interface Routes {
-  path: string;
-  component: ReactNode;
-}
-
-const routes: Routes[] = [
+const routes: IRoute[] = [
   { path: "/", component: <Home /> },
   { path: "/gallery", component: <Gallery /> },
   { path: "/about", component: <About /> },
@@ -59,7 +55,7 @@ const App = () => {
               <Switch>
                 <ErrorBoundary>
                   <Suspense fallback={Loader}>
-                    {routes.map(({ path, component }: Routes) => (
+                    {routes.map(({ path, component }: IRoute) => (
                       <Route exact path={path} key={path}>
                         <Content className="routeAnim fade">
                           {component}

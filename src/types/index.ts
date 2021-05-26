@@ -1,24 +1,24 @@
 import { ReactNode } from "react";
 import { ReactImageGalleryItem } from "react-image-gallery";
 
-export type HeroProps = {
+export type THero = {
   intro?: string | ReactNode;
   title?: string | ReactNode;
 };
 
-export type ArtProps = {
+export type TArt = {
   img?: string;
   type?: string;
   title?: string;
   desc?: string | ReactNode;
 };
 
-export type ArticleProps = {
+export type TArticle = {
   cover?: string;
   title?: string;
   content?: string | ReactNode;
 };
 
-export type CarouselProps = {
+export type TCarousel = {
   screens: ReactImageGalleryItem[];
 };

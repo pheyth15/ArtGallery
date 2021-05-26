@@ -1,4 +1,4 @@
-import { ArtObject, SliderObject } from "../../interfaces";
+import { IArt, ICarousel } from "../../interfaces";
 
 // General Arts
 import emotion from "../../assets/gallery/emotion.png";
@@ -26,7 +26,7 @@ import sc3 from "../../assets/gallery/sculpture/3.jpg";
 import sc4 from "../../assets/gallery/sculpture/4.jpg";
 import sc5 from "../../assets/gallery/sculpture/5.jpg";
 
-export const arts: ArtObject[] = [
+export const arts: IArt[] = [
   {
     img: `${emotion}`,
     type: "Emotion",
@@ -59,7 +59,7 @@ export const arts: ArtObject[] = [
   },
 ];
 
-export const assemblyArt: SliderObject[] = [
+export const assemblyArt: ICarousel[] = [
   {
     original: `${a3d1}`,
     thumbnail: `${a3d1}`,
@@ -80,7 +80,7 @@ export const assemblyArt: SliderObject[] = [
   },
 ];
 
-export const installationArt: SliderObject[] = [
+export const installationArt: ICarousel[] = [
   {
     original: `${in1}`,
     thumbnail: `${in1}`,
@@ -101,7 +101,7 @@ export const installationArt: SliderObject[] = [
   },
 ];
 
-export const sculptureArt: SliderObject[] = [
+export const sculptureArt: ICarousel[] = [
   {
     original: `${sc1}`,
     thumbnail: `${sc1}`,

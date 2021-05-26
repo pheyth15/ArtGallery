@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ArticleProps } from "../types";
+import { TArticle } from "../types";
 
 const Container = styled.article`
   color: ${(props) => props.theme.colors.dark};
@@ -27,7 +27,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Article = ({ cover, title, content }: ArticleProps) => (
+const Article = ({ cover, title, content }: TArticle) => (
   <Container>
     <Image src={cover} alt={`Image showing ${title}`} />
     <Title>{title}</Title>

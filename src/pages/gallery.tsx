@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import styled from "styled-components";
 import Loader from "../components/Loader";
-import { ArtObject } from "../interfaces";
+import { IArt } from "../interfaces";
 import { arts, assemblyArt, installationArt, sculptureArt } from "./api";
 
 const Art = lazy(() => import("../components/Art"));
@@ -20,7 +20,7 @@ const Gallery = () => (
   <Showcase>
     <Suspense fallback={<Loader />}>
       {/* 1 Image Arts */}
-      {arts.map(({ img, type, title, desc }: ArtObject) => (
+      {arts.map(({ img, type, title, desc }: IArt) => (
         <Art img={img} type={type} title={title} desc={desc} />
       ))}
 
