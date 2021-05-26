@@ -1,7 +1,10 @@
 import { ArtObject, SliderObject } from "../../interfaces";
-import art1 from "../../assets/img/placeholder.jpg";
+import emotion from "../../assets/gallery/emotion.png";
+import fantasy from "../../assets/gallery/fantasy.jpg";
+import op from "../../assets/gallery/op.png";
+import poem from "../../assets/gallery/poem.png";
 
-// 3D Arts
+// Assembly
 import a3d1 from "../../assets/gallery/assembly/1.jpg";
 import a3d2 from "../../assets/gallery/assembly/2.jpg";
 import a3d3 from "../../assets/gallery/assembly/3.jpg";
@@ -21,35 +24,40 @@ import a3d16 from "../../assets/gallery/assembly/16.jpg";
 import a3d17 from "../../assets/gallery/assembly/17.jpg";
 import a3d18 from "../../assets/gallery/assembly/18.jpg";
 
+// Installation
+import in1 from "../../assets/gallery/installation/1.jpg";
+import in2 from "../../assets/gallery/installation/2.jpg";
+import in3 from "../../assets/gallery/installation/3.jpg";
+import in4 from "../../assets/gallery/installation/4.jpg";
+
 export const arts: ArtObject[] = [
   {
-    img: `${art1}`,
-    title: "Sample Art Title",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+    img: `${emotion}`,
+    type: "Emotion",
+    title: "Title",
+    desc: "Short description.",
   },
   {
-    img: `${art1}`,
-    title: "Sample Art Title",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+    img: `${op}`,
+    type: "Optical",
+    title: "Title",
+    desc: "Short description.",
   },
   {
-    img: `${art1}`,
-    title: "Sample Art Title",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+    img: `${fantasy}`,
+    type: "Fantasy",
+    title: "Title",
+    desc: "Short description.",
   },
   {
-    img: `${art1}`,
-    title: "Sample Art Title",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
-  },
-  {
-    img: `${art1}`,
-    title: "Sample Art Title",
+    img: `${poem}`,
+    type: "Poem",
+    title: "Cavitenos' Life During the Pandemic",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
   },
 ];
 
-export const angledArts: SliderObject[] = [
+export const assemblyArt: SliderObject[] = [
   {
     original: `${a3d1}`,
     thumbnail: `${a3d1}`,
@@ -123,5 +131,26 @@ export const angledArts: SliderObject[] = [
   {
     original: `${a3d18}`,
     thumbnail: `${a3d18}`,
+  },
+];
+
+export const installationArt: SliderObject[] = [
+  {
+    original: `${in1}`,
+    thumbnail: `${in1}`,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+  },
+  {
+    original: `${in2}`,
+    thumbnail: `${in2}`,
+  },
+  {
+    original: `${in3}`,
+    thumbnail: `${in3}`,
+  },
+  {
+    original: `${in4}`,
+    thumbnail: `${in4}`,
   },
 ];

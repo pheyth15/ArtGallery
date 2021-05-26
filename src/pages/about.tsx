@@ -3,12 +3,14 @@ import Article from "../components/Article";
 import Cover from "../assets/img/cover.jpg";
 import During from "../assets/img/during.jpg";
 
-const History = styled.div`
-  margin: 0 auto;
-  height: 100vh;
+const History = styled.section`
+  display: block;
   overflow: auto;
+  height: 100vh;
+  width: 100%;
+  padding-right: 10.5vw;
+  margin: 5vw auto;
 `;
-
 const ImageConstraint = styled.div`
   display: inline-block;
   overflow: hidden;

@@ -7,6 +7,7 @@ export interface ExtLinkObject {
 
 export interface ArtObject {
   img: string;
+  type: string;
   title: string;
   desc: string;
 }

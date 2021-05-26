@@ -8,6 +8,7 @@ export type HeroProps = {
 
 export type ArtProps = {
   img?: string;
+  type?: string;
   title?: string;
   desc?: string | ReactNode;
 };
