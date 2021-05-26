@@ -30,32 +30,32 @@ export const arts: IArt[] = [
   {
     img: `${emotion}`,
     type: "Emotion",
-    title: "Title",
-    desc: "Short description.",
+    title: "Room of Desolation",
+    desc: "Modular learning is the new learning system in the new normal in the Philippines, especially in Cavite. Many students try to cope with the new normal, but others cannot cope-up due to lack of resources and piled-up modules/requirements.",
   },
   {
     img: `${op}`,
     type: "Optical",
-    title: "Title",
-    desc: "Short description.",
+    title: "Trapped Emotions",
+    desc: "Represents the different emotions of people in Cavite who are trapped inside their houses while being afraid of getting infected. That is why they cannot express their true feelings and emotions by doing what they do because of the Pandemic.",
   },
   {
     img: `${fantasy}`,
     type: "Fantasy",
-    title: "Title",
-    desc: "Short description.",
+    title: "The Art of Flatness",
+    desc: "Represents how fast the COVID-19 virus spread and how people in the Cavite deal with it.",
   },
   {
     img: `${abstract}`,
     type: "Abstract",
-    title: "Title",
-    desc: "Short description.",
+    title: "Rain of Hope",
+    desc: "Represents the Cavite or the Caviteños being hopeful even though they are suffering because of the pandemic.",
   },
   {
     img: `${poem}`,
     type: "Poetry",
     title: "Caviteños' Life During the Pandemic",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+    desc: "Pandemic life of Caviteños, how they are devastated and struggling at the same time during the pandemic, and why they should not abandon their hopes in times of crisis.",
   },
 ];
 
@@ -64,7 +64,7 @@ export const assemblyArt: ICarousel[] = [
     original: `${a3d1}`,
     thumbnail: `${a3d1}`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+      "Maragondon Church — The Our Lady of the Assumption Parish Church, commonly known as Maragondon Church, is the only heritage structure in the municipality of Maragondon, Cavite, declared by the National Museum as a National Cultural Treasure.",
   },
   {
     original: `${a3d2}`,
@@ -106,7 +106,7 @@ export const sculptureArt: ICarousel[] = [
     original: `${sc1}`,
     thumbnail: `${sc1}`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+      "Anting-anting ng Cavite — Many people believe in anting-anting especially Caviteños that it can protect you from any harm if you have it with you all the time.",
   },
   {
     original: `${sc2}`,
