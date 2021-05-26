@@ -1,8 +1,11 @@
+import { lazy, Suspense } from "react";
 import styled from "styled-components";
-import Art from "../components/Art";
+import Loader from "../components/Loader";
 import { ArtObject } from "../interfaces";
-import { arts, assemblyArt, installationArt } from "./api";
-import Carousel from "../components/Carousel";
+import { arts, assemblyArt, installationArt, sculptureArt } from "./api";
+
+const Art = lazy(() => import("../components/Art"));
+const Carousel = lazy(() => import("../components/Carousel"));
 
 const Showcase = styled.section`
   display: block;
@@ -15,11 +18,17 @@ const Showcase = styled.section`
 
 const Gallery = () => (
   <Showcase>
-    {arts.map(({ img, type, title, desc }: ArtObject) => (
-      <Art img={img} type={type} title={title} desc={desc} />
-    ))}
-    <Carousel screens={assemblyArt} />
-    <Carousel screens={installationArt} />
+    <Suspense fallback={<Loader />}>
+      {/* 1 Image Arts */}
+      {arts.map(({ img, type, title, desc }: ArtObject) => (
+        <Art img={img} type={type} title={title} desc={desc} />
+      ))}
+
+      {/* Carousel Images */}
+      <Carousel screens={assemblyArt} />
+      <Carousel screens={installationArt} />
+      <Carousel screens={sculptureArt} />
+    </Suspense>
   </Showcase>
 );
 
