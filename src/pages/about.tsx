@@ -11,11 +11,13 @@ const History = styled.section`
   padding-right: 10.5vw;
   margin: 5vw auto;
 `;
+
 const ImageConstraint = styled.div`
   display: inline-block;
   overflow: hidden;
   width: 100%;
   height: 70vh;
+  margin-bottom: 1vw;
   border-radius: 0.5vw;
   box-shadow: 0 0.15vw 0.7vw #777;
 `;
@@ -50,10 +52,14 @@ const About = () => (
           <Header>Before the COVID-19 Pandemic</Header>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vero
-            suscipit autem, obcaecati ut tempore. Voluptate, id enim nam,
-            blanditiis natus modi. Nihil sit maiores perspiciatis nulla facilis
-            explicabo ab?
+            Cavite has an approximate population of 3,678,301, It has 43 private
+            hospitals , 12 public hospitals. It also has 69 economic zones, 473
+            industrial establishments, 230 operating cooperatives. In terms of
+            business, Cavite has 12,207 Micro Enterprises, 51 Small Enterprises,
+            31 Medium Enterprises, 19 Large Enterprises, 50 Rural Banks, 195
+            Commercial Banks, 149 Thrift Banks, it also has 4 Financing
+            Companies, 764 Pawnshops, and 5 Non-Stock & Saving & Loan
+            Associations.
           </p>
 
           <Header>During the COVID-19 Pandemic</Header>
@@ -63,10 +69,10 @@ const About = () => (
           </ImageConstraint>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vero
-            suscipit autem, obcaecati ut tempore. Voluptate, id enim nam,
-            blanditiis natus modi. Nihil sit maiores perspiciatis nulla facilis
-            explicabo ab?
+            Due to the effects of COVID-19, the economic sector of Cavite has
+            since dwindled due to multiple reasons mostly because of financing
+            issues. Although the health sector has also taken toll, the
+            authorities managed to handle to problem quite efficiently.
           </p>
         </section>
       }
