@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Loading from "../assets/img/loading-tr.gif";
+import Loading from "../assets/shared/loading-tr.gif";
 
 const PageLoader = styled.img`
   width: 12vw;

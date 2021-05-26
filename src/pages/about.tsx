@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Article from "../components/Article";
-import Cover from "../assets/img/cover.jpg";
-import During from "../assets/img/during.jpg";
+import Cover from "../assets/shared/cover.jpg";
+import During from "../assets/shared/during.jpg";
 
 const History = styled.section`
   display: block;
