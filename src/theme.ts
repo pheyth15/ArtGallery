@@ -1,6 +1,10 @@
 import { createGlobalStyle, DefaultTheme } from "styled-components";
 
 const GlobalTheme = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -9,14 +13,6 @@ const GlobalTheme = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    #bgVideo {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      min-width: 100%;
-      z-index: -1;
-    }
 
     /*  Route Animations */
 
@@ -64,7 +60,7 @@ const GlobalTheme = createGlobalStyle`
     }
 
     *::-webkit-scrollbar {
-      width: 7px;
+      width: 0.5vw;
     }
 
     *::-webkit-scrollbar-track {
@@ -73,8 +69,8 @@ const GlobalTheme = createGlobalStyle`
 
     *::-webkit-scrollbar-thumb {
       background-color: #555;
-      border-radius: 12px;
-      border: 3px solid transparent;
+      border-radius: 0.9vw;
+      border: 0.3vw solid transparent;
     }
   }
 `;
