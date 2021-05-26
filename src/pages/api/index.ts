@@ -85,7 +85,7 @@ export const installationArt: ICarousel[] = [
     original: `${in1}`,
     thumbnail: `${in1}`,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum mi et nibh sodales iaculis. Praesent consectetur feugiat convallis. Proin eget sagittis massa.",
+      "The Last Gasp — It illustrates Cavite being downhearted during the pandemic but there are still people supporting fellow Caviteño to rise and look for the better future.",
   },
   {
     original: `${in2}`,
