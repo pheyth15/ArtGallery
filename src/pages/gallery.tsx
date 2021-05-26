@@ -1,23 +1,25 @@
 import styled from "styled-components";
 import Art from "../components/Art";
 import { ArtObject } from "../interfaces";
-import { angledArts, arts } from "./api";
+import { arts, assemblyArt, installationArt } from "./api";
 import Carousel from "../components/Carousel";
 
 const Showcase = styled.section`
   display: block;
   overflow: auto;
   height: 100vh;
+  width: 100%;
+  padding-right: 10.5vw;
   margin: 5vw auto;
 `;
 
-/* TODO: Image fullscreen modal */
 const Gallery = () => (
   <Showcase>
-    {arts.map(({ img, title, desc }: ArtObject) => (
-      <Art img={img} title={title} desc={desc} />
+    {arts.map(({ img, type, title, desc }: ArtObject) => (
+      <Art img={img} type={type} title={title} desc={desc} />
     ))}
-    <Carousel screens={angledArts} />
+    <Carousel screens={assemblyArt} />
+    <Carousel screens={installationArt} />
   </Showcase>
 );
 
