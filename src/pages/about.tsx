@@ -60,7 +60,10 @@ const About = () => (
             Due to the effects of COVID-19, the economic sector of Cavite has
             since dwindled due to multiple reasons mostly because of financing
             issues. Although the health sector has also taken toll, the
-            authorities managed to handle to problem quite efficiently.
+            authorities managed to handle to problem quite efficiently. The
+            people have been in isolation ever since to avoid contracting the
+            virus. This leads to the some mental health issues due to the lack
+            of physical interactions.
           </p>
         </section>
       }
