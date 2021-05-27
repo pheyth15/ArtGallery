@@ -20,8 +20,8 @@ const Gallery = () => (
   <Showcase>
     <Suspense fallback={<Loader />}>
       {/* 1 Image Arts */}
-      {arts.map(({ img, type, title, desc }: IArt) => (
-        <Art img={img} type={type} title={title} desc={desc} />
+      {arts.map(({ img, type, title, artist, desc }: IArt) => (
+        <Art img={img} type={type} title={title} artist={artist} desc={desc} />
       ))}
 
       {/* Carousel Images */}

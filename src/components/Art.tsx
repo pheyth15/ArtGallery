@@ -22,11 +22,11 @@ const Image = styled.img`
 
 const About = styled.div`
   color: ${(props) => props.theme.colors.light};
-  text-shadow: 0 0 1vw ${(props) => props.theme.colors.dark};
-  background-color: rgba(54, 50, 45, 0.7);
+  text-shadow: 0 0 0.8vw ${(props) => props.theme.colors.dark};
+  background-color: rgba(54, 50, 45, 0.8);
   border-top: 0.28vw ridge ${(props) => props.theme.colors.light};
   margin: 0 3.1vw;
-  padding: 1.5vw 3vw;
+  padding: 1.2vw 3vw;
   font-size: 1.25vw;
   position: absolute;
   bottom: 0;
@@ -43,8 +43,8 @@ const About = styled.div`
 `;
 
 const Badge = styled.span`
-  font-size: 0.95vw;
-  padding: 0.5vw 0.8vw;
+  font-size: 0.9vw;
+  padding: 0.35vw 0.65vw;
   margin: 0 0.5vw;
   color: ${(props) => props.theme.colors.dark};
   background-color: ${(props) => props.theme.colors.primary};
@@ -57,10 +57,20 @@ const Badge = styled.span`
 
 const Title = styled.h1`
   font-weight: 900;
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   line-height: 1 !important;
-  margin: 1vw 0;
+  margin: 1vw 0 0.7vw 0;
   text-transform: uppercase;
+`;
+
+const Artist = styled.h6`
+  margin: 0;
+  font-size: 1.1vw;
+  font-weight: normal;
+`;
+
+const Description = styled.p`
+  font-size: 1.17vw;
 `;
 
 const Art = ({ img, type, title, artist, desc }: IArt) => (
@@ -70,8 +80,10 @@ const Art = ({ img, type, title, artist, desc }: IArt) => (
       <Title>
         {title} <Badge>{type}</Badge>
       </Title>
-      <p>{artist}</p>
-      <p>{desc}</p>
+      <Artist>
+        by <b>{artist}</b>
+      </Artist>
+      <Description>{desc}</Description>
     </About>
   </Panel>
 );
