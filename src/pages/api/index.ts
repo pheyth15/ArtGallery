@@ -7,6 +7,18 @@ import op from "../../assets/gallery/op.png";
 import abstract from "../../assets/gallery/abstract.png";
 import poem from "../../assets/gallery/poem.png";
 
+// Decalcomania
+import dc1 from "../../assets/gallery/dc1.jpg";
+import dc2 from "../../assets/gallery/dc2.jpg";
+import dc3 from "../../assets/gallery/dc3.png";
+
+// Collage
+import co1 from "../../assets/gallery/co1.jpg";
+import co2 from "../../assets/gallery/co2.jpg";
+
+// Frottage
+import fr1 from "../../assets/gallery/fr1.jpg";
+
 // Assembly
 import a3d1 from "../../assets/gallery/assembly/1.jpg";
 import a3d2 from "../../assets/gallery/assembly/2.jpg";
@@ -29,38 +41,80 @@ import sc5 from "../../assets/gallery/sculpture/5.jpg";
 export const arts: IArt[] = [
   {
     img: `${emotion}`,
-    type: "Emotion",
+    type: ["Emotion"],
     title: "Room of Desolation",
     artist: "Kevin Daniel Almirante",
     desc: "Modular learning is the new learning system in the new normal in the Philippines, especially in Cavite. Many students try to cope with the new normal, but others cannot cope-up due to lack of resources and piled-up modules/requirements.",
   },
   {
     img: `${op}`,
-    type: "Optical",
+    type: ["Optical"],
     title: "Trapped Emotions",
     artist: "Kevin Daniel Almirante",
     desc: "Represents the different emotions of people in Cavite who are trapped inside their houses while being afraid of getting infected. That is why they cannot express their true feelings and emotions by doing what they do because of the Pandemic.",
   },
   {
     img: `${fantasy}`,
-    type: "Fantasy",
+    type: ["Fantasy"],
     title: "The Art of Flatness",
     artist: "Mark Gil Tamiat",
     desc: "Represents how fast the COVID-19 virus spread and how people in the Cavite deal with it.",
   },
   {
     img: `${abstract}`,
-    type: "Abstract",
+    type: ["Abstract"],
     title: "Rain of Hope",
     artist: "Kevin Daniel Almirante",
     desc: "Represents the Cavite or the Caviteños being hopeful even though they are suffering because of the pandemic.",
   },
   {
     img: `${poem}`,
-    type: "Poetry",
+    type: ["Poetry"],
     title: "Caviteños' Life During the Pandemic",
     artist: "Ysabell Anne Prijoles",
     desc: "Pandemic life of Caviteños, how they are devastated and struggling at the same time during the pandemic, and why they should not abandon their hopes in times of crisis.",
+  },
+  {
+    img: `${co1}`,
+    type: ["Collage"],
+    title: "Philippine Eagle",
+    artist: "Kevin Daniel Almirante",
+    desc: "The Philippine Eagle, also known as the monkey-eating eagle or great Philippine Eagle, is the national bird of the Philippines.",
+  },
+  {
+    img: `${co2}`,
+    type: ["Collage"],
+    title: "Mangga",
+    artist: "Ysabell Anne Prijoles",
+    desc: 'Mango, or in Tagalog "Mangga" is known as the National Fruit of the Philippines.',
+  },
+  {
+    img: `${fr1}`,
+    type: ["Frottage"],
+    title: "Mayon Volcano",
+    artist: "Kevin Daniel Almirante",
+    desc: 'Mayon volcano, also known as Mount Mayon, is a popular tourist spot. It is renowned for its "perfect cone" because of its symmetric conical shape.',
+  },
+  {
+    img: `${dc2}`,
+    type: ["Decalcomania"],
+    title: "We Stand as One",
+    artist: "Ysabell Anne Prijoles",
+    desc: 'It represents how Filipinos must always be united and to remember what "Bayanihan" really means.',
+  },
+  {
+    img: `${dc1}`,
+    type: ["Decalcomania", "Abstract"],
+    title: "Tree of Nobility",
+    artist: "Kevin Daniel Almirante",
+    desc: "It represents the inequality system in the world, especially in the Philippines. It shows that people in the top classes family/rich family are the ones who have always been the priority over the people at the bottom.",
+  },
+  {
+    img: `${dc3}`,
+    type: ["Decalcomania", "Abstract"],
+    title: "Axe of Life",
+    artist: "Joshua Hero Dela Cruz",
+    desc: "Death eventually comes for all. But for every loss a life, a new one is born. Life goes on.",
   },
 ];
 

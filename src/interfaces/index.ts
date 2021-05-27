@@ -23,7 +23,7 @@ export interface IExtLink {
 
 export interface IArt {
   img: string;
-  type: string;
+  type?: any;
   title: string;
   artist: string;
   desc: string | ReactNode;
