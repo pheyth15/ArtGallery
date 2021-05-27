@@ -31,6 +31,7 @@ export interface IArt {
 
 export interface IArticle {
   cover?: string;
+  coverWidth?: string | number;
   title?: string;
   content?: string | ReactNode;
 }

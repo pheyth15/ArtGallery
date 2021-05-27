@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { IArticle } from "../interfaces";
 
+interface ArticleCover {
+  readonly shadow: boolean;
+  width: string | number;
+}
+
 const Container = styled.article`
   color: ${(props) => props.theme.colors.dark};
   font-size: 1.2vw;
@@ -10,12 +15,12 @@ const Container = styled.article`
   margin: 2.7vw 0;
 `;
 
-const Image = styled.img`
+const Image = styled.img<ArticleCover>`
   margin: 0 auto;
   display: block;
-  width: 86%;
+  width: ${({ width }) => width};
   border-radius: 0.5vw;
-  box-shadow: 0 0.15vw 0.7vw #777;
+  box-shadow: ${({ shadow }) => (shadow ? "0 0.15vw 0.7vw #777" : "none")};
 `;
 
 const Title = styled.h1`
@@ -27,11 +32,16 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Article = ({ cover, title, content }: IArticle) => (
+const Article = ({ cover, title, content, coverWidth }: IArticle) => (
   <Container>
     {/* Show article cover if exists */}
     {cover && true ? (
-      <Image src={cover} alt={`Image showing ${title}`} />
+      <Image
+        src={cover}
+        alt={`Image showing ${title}`}
+        width={coverWidth || "86%"}
+        shadow={false}
+      />
     ) : null}
 
     <Title>{title}</Title>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Article from "../components/Article";
+import Logo from "../assets/shared/logo.png";
 import Cover from "../assets/shared/cover.jpg";
 import During from "../assets/shared/during.jpg";
 
@@ -29,6 +30,8 @@ const About = () => (
   <History>
     <Article
       title="Cavite, Philippines"
+      cover={Logo}
+      coverWidth={"15vw"}
       content={
         <section>
           <p>
