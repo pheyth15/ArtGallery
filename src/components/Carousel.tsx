@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import { TCarousel } from "../types";
 import ImageGallery from "react-image-gallery";
 
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import { ICarouselObject } from "../interfaces";
 
 const ImageCarousel = createGlobalStyle`
   .image-gallery {
@@ -27,7 +27,7 @@ const ImageCarousel = createGlobalStyle`
   }
 `;
 
-const Carousel = ({ screens }: TCarousel) => (
+const Carousel = ({ screens }: ICarouselObject) => (
   <>
     <ImageCarousel />
     <ImageGallery

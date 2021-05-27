@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TArt } from "../types";
+import { IArt } from "../interfaces";
 
 const Panel = styled.article`
   margin: 9vw 0;
@@ -63,13 +63,14 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Art = ({ img, type, title, desc }: TArt) => (
+const Art = ({ img, type, title, artist, desc }: IArt) => (
   <Panel>
     <Image src={img} alt={title} draggable="false" />
     <About>
       <Title>
         {title} <Badge>{type}</Badge>
       </Title>
+      <p>{artist}</p>
       <p>{desc}</p>
     </About>
   </Panel>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { IButton } from "../interfaces";
 
 const LinkButton = styled(Link)`
   background-color: transparent;
@@ -12,12 +13,7 @@ const LinkButton = styled(Link)`
   transition: 0.15s;
 `;
 
-type ButtonProps = {
-  text: string;
-  link: string;
-};
-
-const Button = ({ text, link }: ButtonProps) => (
+const Button = ({ text, link }: IButton) => (
   <LinkButton to={link}>{text}</LinkButton>
 );
 

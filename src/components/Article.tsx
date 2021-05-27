@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TArticle } from "../types";
+import { IArticle } from "../interfaces";
 
 const Container = styled.article`
   color: ${(props) => props.theme.colors.dark};
@@ -27,7 +27,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Article = ({ cover, title, content }: TArticle) => (
+const Article = ({ cover, title, content }: IArticle) => (
   <Container>
     {/* Show article cover if exists */}
     {cover && true ? (

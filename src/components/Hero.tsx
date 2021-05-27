@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { THero } from "../types";
+import { IHero } from "../interfaces";
 
 const Introduction = styled.section`
   color: ${(props) => props.theme.colors.dark};
@@ -19,7 +19,7 @@ const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-const Hero = ({ intro, title }: THero) => (
+const Hero = ({ intro, title }: IHero) => (
   <Introduction>
     <p style={{ margin: 0 }}>{intro}</p>
     <Title>{title}</Title>
