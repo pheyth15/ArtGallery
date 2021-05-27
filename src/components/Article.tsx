@@ -35,14 +35,14 @@ const Title = styled.h1`
 const Article = ({ cover, title, content, coverWidth }: IArticle) => (
   <Container>
     {/* Show article cover if exists */}
-    {cover && true ? (
+    {cover && (
       <Image
         src={cover}
         alt={`Image showing ${title}`}
         width={coverWidth || "86%"}
         shadow={false}
       />
-    ) : null}
+    )}
 
     <Title>{title}</Title>
     <div style={{ padding: "0 2vw" }}>{content}</div>
