@@ -12,19 +12,11 @@ const History = styled.section`
   margin: 5vw auto;
 `;
 
-const ImageConstraint = styled.div`
-  display: inline-block;
-  overflow: hidden;
+const Image = styled.img`
   width: 100%;
-  height: 70vh;
   margin-bottom: 1vw;
   border-radius: 0.5vw;
   box-shadow: 0 0.15vw 0.7vw #777;
-`;
-
-const Image = styled.img`
-  margin: 0;
-  width: 100%;
   vertical-align: middle;
 `;
 
@@ -48,10 +40,7 @@ const About = () => (
           </p>
 
           <Header>Before the COVID-19 Pandemic</Header>
-
-          <ImageConstraint>
-            <Image src={Cover} alt="Before the pandemic" />
-          </ImageConstraint>
+          <Image src={Cover} alt="Before the pandemic" />
 
           <p>
             Cavite has an approximate population of 3,678,301, It has 43 private
@@ -65,10 +54,7 @@ const About = () => (
           </p>
 
           <Header>During the COVID-19 Pandemic</Header>
-
-          <ImageConstraint>
-            <Image src={During} alt="During the pandemic" />
-          </ImageConstraint>
+          <Image src={During} alt="During the pandemic" />
 
           <p>
             Due to the effects of COVID-19, the economic sector of Cavite has
