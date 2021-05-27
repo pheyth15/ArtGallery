@@ -32,7 +32,7 @@ const Carousel = ({ screens }: ICarouselObject) => (
     <ImageCarousel />
     <ImageGallery
       items={screens}
-      autoPlay={true}
+      autoPlay={false}
       slideInterval={10000}
       thumbnailPosition="left"
       lazyLoad={true}
