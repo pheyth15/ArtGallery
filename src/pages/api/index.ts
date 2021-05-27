@@ -114,7 +114,7 @@ export const arts: IArt[] = [
     type: ["Decalcomania", "Abstract"],
     title: "Axe of Life",
     artist: "Joshua Hero Dela Cruz",
-    desc: "Death eventually comes for all. But for every loss a life, a new one is born. Life goes on.",
+    desc: "Death eventually comes for all. But for every loss of life, a new one is born. Life goes on.",
   },
 ];
 
