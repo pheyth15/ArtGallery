@@ -22,7 +22,7 @@ const Layout = styled.div`
   padding: 0 13vw;
   z-index: 2;
   overflow: hidden;
-  background-color: rgba(255, 243, 213, 0.7);
+  background-color: rgba(255, 243, 213, 0.8);
 `;
 
 const Content = styled.main`
