@@ -2525,6 +2525,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-portal@npm:4.0.2":
+  version: 4.0.2
+  resolution: "@types/react-portal@npm:4.0.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 19e53e1c2258aa25cfb8c25f17e3293b6d6e660585a3e66de0cb67d9e85397de1e178c2b8704ac9ecb8cd914c8d63c875f253f4ec3b24468784a290e6af86824
+  languageName: node
+  linkType: hard
+
 "@types/react-router-dom@npm:5.1.7":
   version: 5.1.7
   resolution: "@types/react-router-dom@npm:5.1.7"
@@ -3453,6 +3462,7 @@ __metadata:
     "@types/react": 17.0.8
     "@types/react-dom": 17.0.5
     "@types/react-image-gallery": 1.0.2
+    "@types/react-portal": 4.0.2
     "@types/react-router-dom": 5.1.7
     "@types/react-transition-group": 4.4.1
     "@types/styled-components": 5.1.9
@@ -3475,6 +3485,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-image-gallery: 1.0.9
+    react-portal: 4.2.1
     react-router-dom: 5.2.0
     react-scripts: 4.0.3
     react-transition-group: 4.4.1
@@ -12936,6 +12947,17 @@ fsevents@^1.2.7:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 3eff23f410d40ab9bc5177f147a92c7f42c356a21ecea340e0554566956d67e5e1ba56f26cc7fa22339ac3c7151744177bd6305eaa26d3cbf15f354358c9d9b6
+  languageName: node
+  linkType: hard
+
+"react-portal@npm:4.2.1":
+  version: 4.2.1
+  resolution: "react-portal@npm:4.2.1"
+  dependencies:
+    prop-types: ^15.5.8
+  peerDependencies:
+    react: ^15.0.0-0 || ^16.0.0-0 || ^17.0.0-0
+  checksum: 474640310e97159d53b481b9f7e274e85a1047b09fef9e3429658c3e60131bc9687071996af48169c91752f052bf75e8c65642ecfc062d9dbec75b2c589f6cb2
   languageName: node
   linkType: hard
 

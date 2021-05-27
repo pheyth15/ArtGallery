@@ -22,6 +22,7 @@ export interface IExtLink {
 }
 
 export interface IArt {
+  preview?: string;
   img: string;
   type?: any;
   title: string;

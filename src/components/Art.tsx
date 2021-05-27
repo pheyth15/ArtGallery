@@ -1,3 +1,4 @@
+import { PortalWithState } from "react-portal";
 import styled from "styled-components";
 import { IArt } from "../interfaces";
 
@@ -18,6 +19,7 @@ const Image = styled.img`
   width: 90%;
   height: auto;
   border-radius: 0.5vw;
+  cursor: zoom-in;
   box-shadow: 0 0.15vw 0.7vw #777;
 `;
 
@@ -39,7 +41,7 @@ const About = styled.div`
   border-bottom-right-radius: 0.5vw;
 
   &:hover {
-    filter: opacity(0);
+    filter: opacity(0.5);
   }
 `;
 
@@ -54,6 +56,7 @@ const Title = styled.h1`
 const Artist = styled.h6`
   margin: 0;
   font-size: 1.1vw;
+  width: max-content;
   font-weight: normal;
 `;
 
@@ -61,19 +64,64 @@ const Description = styled.p`
   font-size: 1.17vw;
 `;
 
+/* Fullscreen Overlay */
+const FullPanel = styled.article`
+  margin: 0;
+  color: ${(props) => props.theme.colors.dark};
+  background-color: rgba(24, 24, 24, 0.95);
+  font-size: 1.5vw;
+  width: 100%;
+  word-wrap: break-word;
+  vertical-align: middle;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8;
+`;
+
+const FullImage = styled.img`
+  margin: 0 auto;
+  display: block;
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  cursor: zoom-out;
+  z-index: 9;
+`;
+
 const Art = ({ img, type, title, artist, desc }: IArt) => (
-  <Panel>
-    <Image src={img} alt={title} draggable="false" />
-    <About>
-      <Title>
-        {title} {type}
-      </Title>
-      <Artist>
-        by <b>{artist}</b>
-      </Artist>
-      <Description>{desc}</Description>
-    </About>
-  </Panel>
+  <PortalWithState closeOnOutsideClick closeOnEsc>
+    {({ openPortal, closePortal, portal }) => (
+      <>
+        <Panel>
+          <Image src={img} alt={title} draggable="false" onClick={openPortal} />
+          <About>
+            <Title>
+              {title} {type}
+            </Title>
+            <Artist>
+              by <b>{artist}</b>
+            </Artist>
+            <Description>{desc}</Description>
+          </About>
+        </Panel>
+
+        {/* Portal Active */}
+        {portal(
+          <FullPanel onClick={closePortal}>
+            <FullImage
+              src={img}
+              alt={title}
+              draggable="false"
+              onClick={openPortal}
+            />
+          </FullPanel>
+        )}
+      </>
+    )}
+  </PortalWithState>
 );
 
 export default Art;

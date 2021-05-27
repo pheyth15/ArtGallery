@@ -41,7 +41,7 @@ const routes: IRoute[] = [
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout>
+      <Layout className="main-app">
         <Nav />
 
         <ErrorBoundary>
