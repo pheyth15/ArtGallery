@@ -1,16 +1,16 @@
 import { IArt, ICarousel } from "../../interfaces";
 
 // General Arts
-import emotion from "../../assets/gallery/emotion.png";
+import emotion from "../../assets/gallery/emotion.jpg";
 import fantasy from "../../assets/gallery/fantasy.jpg";
-import op from "../../assets/gallery/op.png";
-import abstract from "../../assets/gallery/abstract.png";
-import poem from "../../assets/gallery/poem.png";
+import op from "../../assets/gallery/op.jpg";
+import abstract from "../../assets/gallery/abstract.jpg";
+import poem from "../../assets/gallery/poem.jpg";
 
 // Decalcomania
 import dc1 from "../../assets/gallery/dc1.jpg";
 import dc2 from "../../assets/gallery/dc2.jpg";
-import dc3 from "../../assets/gallery/dc3.png";
+import dc3 from "../../assets/gallery/dc3.jpg";
 
 // Collage
 import co1 from "../../assets/gallery/co1.jpg";
