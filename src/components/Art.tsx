@@ -8,6 +8,7 @@ const Panel = styled.article`
   height: max-content;
   word-wrap: break-word;
   vertical-align: middle;
+  overflow: hidden;
   position: relative;
 `;
 
