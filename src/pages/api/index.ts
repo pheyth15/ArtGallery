@@ -112,7 +112,7 @@ export const arts: IArt[] = [
   {
     img: `${dc3}`,
     type: ["Decalcomania", "Abstract"],
-    title: "Axe of Life",
+    title: "Scepter of Life",
     artist: "Joshua Hero Dela Cruz",
     desc: "Death eventually comes for all. But for every loss of life, a new one is born. Life goes on.",
   },
