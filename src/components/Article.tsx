@@ -29,7 +29,11 @@ const Title = styled.h1`
 
 const Article = ({ cover, title, content }: TArticle) => (
   <Container>
-    <Image src={cover} alt={`Image showing ${title}`} />
+    {/* Show article cover if exists */}
+    {cover && true ? (
+      <Image src={cover} alt={`Image showing ${title}`} />
+    ) : null}
+
     <Title>{title}</Title>
     <div style={{ padding: "0 2vw" }}>{content}</div>
   </Container>
