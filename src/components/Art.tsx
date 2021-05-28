@@ -87,12 +87,17 @@ const FullImage = styled.img`
   z-index: 9;
 `;
 
-const Art = ({ img, type, title, artist, desc }: IArt) => (
+const Art = ({ img, preview, type, title, artist, desc }: IArt) => (
   <PortalWithState closeOnOutsideClick closeOnEsc>
     {({ openPortal, closePortal, portal }) => (
       <>
         <Panel>
-          <Image src={img} alt={title} draggable="false" onClick={openPortal} />
+          <Image
+            src={preview}
+            alt={title}
+            draggable="false"
+            onClick={openPortal}
+          />
           <About>
             <Title>
               {title} {type}

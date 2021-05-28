@@ -33,8 +33,9 @@ const Gallery = () => (
   <Showcase>
     <Suspense fallback={<Loader />}>
       {/* 1 Image Arts */}
-      {arts.map(({ img, title, type, artist, desc }: IArt) => (
+      {arts.map(({ img, preview, title, type, artist, desc }: IArt) => (
         <Art
+          preview={preview}
           img={img}
           type={type.map((badges: string[]) => (
             <Badge key={title}>{badges}</Badge>

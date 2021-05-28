@@ -5,16 +5,21 @@ import emotion from "../../assets/gallery/emotion.jpg";
 import fantasy from "../../assets/gallery/fantasy.jpg";
 import op from "../../assets/gallery/op.jpg";
 import abstract from "../../assets/gallery/abstract.jpg";
+
 import poem from "../../assets/gallery/poem.jpg";
+import poemPrv from "../../assets/gallery/poem-prv.jpg";
 
 // Decalcomania
 import dc1 from "../../assets/gallery/dc1.jpg";
+import dc1Prv from "../../assets/gallery/dc1-prv.jpg";
 import dc2 from "../../assets/gallery/dc2.jpg";
 import dc3 from "../../assets/gallery/dc3.jpg";
 
 // Collage
 import co1 from "../../assets/gallery/co1.jpg";
+import co1Prv from "../../assets/gallery/co1-prv.jpg";
 import co2 from "../../assets/gallery/co2.jpg";
+import co2Prv from "../../assets/gallery/co2-prv.jpg";
 
 // Frottage
 import fr1 from "../../assets/gallery/fr1.jpg";
@@ -41,6 +46,7 @@ import sc5 from "../../assets/gallery/sculpture/5.jpg";
 export const arts: IArt[] = [
   {
     img: `${emotion}`,
+    preview: `${emotion}`,
     type: ["Emotion"],
     title: "Room of Desolation",
     artist: "Kevin Daniel Almirante",
@@ -48,6 +54,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${op}`,
+    preview: `${op}`,
     type: ["Optical"],
     title: "Trapped Emotions",
     artist: "Kevin Daniel Almirante",
@@ -55,6 +62,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${fantasy}`,
+    preview: `${fantasy}`,
     type: ["Fantasy"],
     title: "The Art of Flatness",
     artist: "Mark Gil Tamiat",
@@ -62,6 +70,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${abstract}`,
+    preview: `${abstract}`,
     type: ["Abstract"],
     title: "Rain of Hope",
     artist: "Kevin Daniel Almirante",
@@ -69,6 +78,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${poem}`,
+    preview: `${poemPrv}`,
     type: ["Poetry"],
     title: "Caviteños' Life During the Pandemic",
     artist: "Ysabell Anne Prijoles",
@@ -76,6 +86,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${co1}`,
+    preview: `${co1Prv}`,
     type: ["Collage"],
     title: "Philippine Eagle",
     artist: "Kevin Daniel Almirante",
@@ -83,6 +94,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${co2}`,
+    preview: `${co2Prv}`,
     type: ["Collage"],
     title: "Mangga",
     artist: "Ysabell Anne Prijoles",
@@ -90,6 +102,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${fr1}`,
+    preview: `${fr1}`,
     type: ["Frottage"],
     title: "Mayon Volcano",
     artist: "Kevin Daniel Almirante",
@@ -97,6 +110,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${dc2}`,
+    preview: `${dc2}`,
     type: ["Decalcomania"],
     title: "We Stand as One",
     artist: "Ysabell Anne Prijoles",
@@ -104,6 +118,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${dc1}`,
+    preview: `${dc1Prv}`,
     type: ["Decalcomania", "Abstract"],
     title: "Tree of Nobility",
     artist: "Kevin Daniel Almirante",
@@ -111,6 +126,7 @@ export const arts: IArt[] = [
   },
   {
     img: `${dc3}`,
+    preview: `${dc3}`,
     type: ["Decalcomania", "Abstract"],
     title: "Scepter of Life",
     artist: "Joshua Hero Dela Cruz",
