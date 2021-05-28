@@ -39,10 +39,6 @@ const About = styled.div`
   transition: all 0.3s;
   border-bottom-left-radius: 0.5vw;
   border-bottom-right-radius: 0.5vw;
-
-  &:hover {
-    filter: opacity(0.5);
-  }
 `;
 
 const Title = styled.h1`
