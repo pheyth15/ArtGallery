@@ -3484,7 +3484,7 @@ __metadata:
     prettier: 2.3.0
     react: 17.0.2
     react-dom: 17.0.2
-    react-image-gallery: 1.0.10
+    react-image-gallery: 1.1.0
     react-portal: 4.2.1
     react-router-dom: 5.2.0
     react-scripts: 4.0.3
@@ -12915,20 +12915,20 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-image-gallery@npm:1.0.10":
-  version: 1.0.10
-  resolution: "react-image-gallery@npm:1.0.10"
+"react-image-gallery@npm:1.1.0":
+  version: 1.1.0
+  resolution: "react-image-gallery@npm:1.1.0"
   dependencies:
     clsx: ^1.0.4
     lodash.debounce: ^4.0.8
     lodash.isequal: ^4.5.0
     lodash.throttle: ^4.1.1
     prop-types: ^15.5.8
-    react-swipeable: ^5.2.0
+    react-swipeable: 6.0.1
     resize-observer-polyfill: ^1.5.0
   peerDependencies:
     react: ^16.0.0 || ^17.0.0
-  checksum: 855db54e232c3ce90a15750de17d83f45cdd009abd710cf863c4b813203e8e722b5ddfad84f9fc927dc909fde3dd9e1228ef1a809f6790b03a0abf611905cf03
+  checksum: 3287993604ea934c75f060789c7e577c5364d960cc61d16e6143879282031267d74b15fd893d093c79f2d7cae11364709e0e8aeaf9032423ff321b344d3da7bc
   languageName: node
   linkType: hard
 
@@ -13079,14 +13079,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-swipeable@npm:^5.2.0":
-  version: 5.5.1
-  resolution: "react-swipeable@npm:5.5.1"
-  dependencies:
-    prop-types: ^15.6.2
+"react-swipeable@npm:6.0.1":
+  version: 6.0.1
+  resolution: "react-swipeable@npm:6.0.1"
   peerDependencies:
-    react: ^16.0.0-0
-  checksum: b9807d07a24dcddc03ab8e2bf1d825d5e0dc7d5a54187a4e3b28b4d5263fa663b9358e82c8788451d443d3b45f1b31a56b61136e572cef31c334e55a059147ad
+    react: ^16.8.3 || ^17
+  checksum: fa323e621d9a02f95a97d9ec0be237466506018fec12a674d3174ed4100d040ec5213f294894cd3e2484b9e3677f680fcf10677ec4c58247a202b90877c6e259
   languageName: node
   linkType: hard
 
