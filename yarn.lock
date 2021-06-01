@@ -3584,7 +3584,7 @@ __metadata:
     prettier: 2.3.0
     react: 17.0.2
     react-dom: 17.0.2
-    react-image-gallery: 1.1.0
+    react-image-gallery: 1.1.1
     react-portal: 4.2.1
     react-router-dom: 5.2.0
     react-scripts: 4.0.3
@@ -13026,9 +13026,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-image-gallery@npm:1.1.0":
-  version: 1.1.0
-  resolution: "react-image-gallery@npm:1.1.0"
+"react-image-gallery@npm:1.1.1":
+  version: 1.1.1
+  resolution: "react-image-gallery@npm:1.1.1"
   dependencies:
     clsx: ^1.0.4
     lodash.debounce: ^4.0.8
@@ -13039,7 +13039,7 @@ fsevents@^1.2.7:
     resize-observer-polyfill: ^1.5.0
   peerDependencies:
     react: ^16.0.0 || ^17.0.0
-  checksum: 3287993604ea934c75f060789c7e577c5364d960cc61d16e6143879282031267d74b15fd893d093c79f2d7cae11364709e0e8aeaf9032423ff321b344d3da7bc
+  checksum: 62d5bb721d3a99d7c04b98f1c42813cc7ea2fbd7a1d3e84be08d226e9aba38638cacca14bcc921bc8385643528980ebdcef8e9c1b576dca86ab4663feebdcffa
   languageName: node
   linkType: hard
 
