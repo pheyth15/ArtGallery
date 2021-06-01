@@ -2516,12 +2516,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-image-gallery@npm:1.0.2":
-  version: 1.0.2
-  resolution: "@types/react-image-gallery@npm:1.0.2"
+"@types/react-image-gallery@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@types/react-image-gallery@npm:1.0.3"
   dependencies:
     "@types/react": "*"
-  checksum: 353ea43b2e211d21af312809131e86c60df15a7863328d4cb0b79fd64d57cc854501513308f2a7374d55390b645bcd4d3e760431908cdfa11d4457ec21cae848
+  checksum: 2899deab27f1d3f32cd33dc783500fc63f2bda52db8b6c0369d2af195acad50f40cc957931c4392a5b5279e0876feedb6fa937170044c28ee5dee5f6b2cc3877
   languageName: node
   linkType: hard
 
@@ -3561,7 +3561,7 @@ __metadata:
     "@types/node": 14.17.1
     "@types/react": 17.0.8
     "@types/react-dom": 17.0.5
-    "@types/react-image-gallery": 1.0.2
+    "@types/react-image-gallery": 1.0.3
     "@types/react-portal": 4.0.2
     "@types/react-router-dom": 5.1.7
     "@types/react-transition-group": 4.4.1
