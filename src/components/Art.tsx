@@ -64,7 +64,7 @@ const Description = styled.p`
 const FullPanel = styled.article`
   margin: 0;
   color: ${(props) => props.theme.colors.dark};
-  background-color: rgba(24, 24, 24, 0.95);
+  background-color: rgba(24, 24, 24, 0.8);
   font-size: 1.5vw;
   width: 100%;
   word-wrap: break-word;
