@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/node": "14.17.1",
     "@types/react": "17.0.9",
-    "@types/react-dom": "17.0.5",
+    "@types/react-dom": "17.0.6",
     "@types/react-image-gallery": "1.0.3",
     "@types/react-portal": "4.0.2",
     "@types/react-router-dom": "5.1.7",
